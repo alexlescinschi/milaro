@@ -12,7 +12,7 @@ export default function AdvantagesSection() {
       <div className="uk-container">
         <h2 className="section-heading">Warum milaro.ch?</h2>
 
-        <div className="uk-grid" style={{ gap: '1.5rem' }}>
+        <div className="uk-grid advantages-grid" style={{ gap: '1.5rem' }}>
           {advantages.map((a) => (
             <div key={a.title} className="uk-width-1-3@m" style={{ width: '33.333%' }}>
               <div
@@ -33,6 +33,11 @@ export default function AdvantagesSection() {
           ))}
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 900px) { .advantages-grid > div { width: 50% !important; } }
+        @media (max-width: 580px) { .advantages-grid > div { width: 100% !important; } }
+      `}</style>
     </section>
   )
 }

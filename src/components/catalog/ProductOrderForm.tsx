@@ -50,10 +50,10 @@ export default function ProductOrderForm({ productName }: { productName: string 
         background: 'linear-gradient(135deg, rgba(0,0,0,0.75), rgba(0,0,0,0.45))',
       }} />
 
-      <div className="uk-container" style={{ position: 'relative', zIndex: 1 }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', minHeight: '28rem' }}>
-          {/* Left side - text sobre la imagen */}
-          <div style={{
+        <div className="uk-container" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="pof-flex" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', minHeight: '28rem' }}>
+          {/* Left side - text */}
+          <div className="pof-text" style={{
             width: '50%', paddingRight: '4rem',
             color: 'white',
           }}>
@@ -74,8 +74,8 @@ export default function ProductOrderForm({ productName }: { productName: string 
           </div>
 
           {/* Right side - form */}
-          <div style={{
-            width: 440, flexShrink: 0, background: 'white',
+          <div className="pof-card" style={{
+            width: 'min(440px, 100%)', background: 'white',
             borderRadius: '1rem', padding: '2.5rem',
             boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
           }}>
@@ -181,7 +181,7 @@ export default function ProductOrderForm({ productName }: { productName: string 
                       style={{ marginTop: '0.15rem', width: 14, height: 14, accentColor: 'var(--primary-color)', flexShrink: 0 }}
                     />
                     <span style={{ fontSize: '0.72rem', color: 'var(--muted-color)', lineHeight: 1.5 }}>
-                      Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der{' '}
+                      Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäss der{' '}
                       <a href="#" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>Datenschutzerklärung</a>{' '}
                       und den{' '}
                       <a href="#" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>AGB</a> zu.
@@ -209,6 +209,14 @@ export default function ProductOrderForm({ productName }: { productName: string 
         </div>
         </div>
       </div>
+      <style>{`
+        @media (max-width: 768px) {
+          .pof-flex { flex-wrap: wrap !important; gap: 2rem !important; justify-content: center !important; }
+          .pof-text { width: 100% !important; padding-right: 0 !important; text-align: center; }
+          .pof-text p { max-width: 100% !important; margin: 0 auto; }
+          .pof-card { padding: 1.5rem !important; }
+        }
+      `}</style>
     </section>
   )
 }

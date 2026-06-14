@@ -16,18 +16,6 @@ export const NAV_ITEMS = [
         { label: 'Bäder', href: '/katalog/baeder' },
         { label: 'Sofas & Betten', href: '/katalog/sofas-betten' },
       ],
-      col2: [
-        { label: 'Technik', href: '#' },
-        { label: 'Sanitär', href: '#' },
-        { label: 'Arbeitsplatten', href: '#' },
-        { label: 'Wandpaneele', href: '#' },
-        { label: 'Fassadenkatalog', href: '#' },
-      ],
-      promo: {
-        title: 'Frühling Angebote',
-        text: 'Sichern Sie sich jetzt unsere besten Konditionen!',
-        href: '#',
-      },
     },
   },
   {
@@ -99,6 +87,7 @@ export const NAV_ITEMS = [
       },
     },
   },
+  { label: 'Kontakt', href: '/kontakt' },
 ]
 
 export const FOOTER_LINKS = [
@@ -149,5 +138,4 @@ export const STATS = [
   { value: '667 637', label: 'Aufträge ausgeführt seit 1999' },
   { value: '20', label: 'Jahre Garantie' },
   { value: '26', label: 'Jahre auf dem Markt' },
-  { value: '300', label: 'Studios in der Schweiz' },
 ]

@@ -1,36 +1,30 @@
 'use client'
 
-import { useState } from 'react'
+import Link from 'next/link'
 import Breadcrumbs from '@/components/layout/Breadcrumbs'
 import { SITE_CONFIG } from '@/lib/constants'
+import PortfolioGalleryScroll from '@/components/portfolio/PortfolioGalleryScroll'
 
 export default function ContactPage() {
-  const [sent, setSent] = useState(false)
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    const form = new FormData(e.currentTarget)
-    await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: form.get('name'),
-        email: form.get('email'),
-        phone: form.get('phone'),
-        message: form.get('message'),
-      }),
-    })
-    setSent(true)
-  }
-
   return (
     <>
       <Breadcrumbs items={[{ label: 'Kontakt' }]} />
-      <section className="uk-section uk-section-large">
+      <section className="uk-section" style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
         <div className="uk-container">
-          <h1 className="section-heading">Kontakt</h1>
-          <div className="uk-grid" style={{ gap: '3rem', marginTop: '2rem' }}>
-            <div className="uk-width-1-2" style={{ width: '50%' }}>
+          <div className="page-header-row" style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start', marginBottom: '2rem' }}>
+            <div className="page-header-col" style={{ flex: '0 0 25%' }}>
+              <h1 className="section-heading" style={{ marginBottom: '0.5rem', textAlign: 'left' }}>Kontakt</h1>
+              <p style={{ color: 'var(--muted-color)', fontSize: '1rem', margin: 0 }}>Wir sind für Sie da</p>
+            </div>
+            <div className="page-header-col" style={{ flex: '0 0 75%' }}>
+              <p style={{ color: 'var(--muted-color)', fontSize: '1rem', margin: 0, lineHeight: 1.7 }}>
+                Haben Sie Fragen oder möchten Sie ein persönliches Angebot? Unser Team steht Ihnen gerne zur Verfügung.
+              </p>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap' }}>
+            <div style={{ flex: '1 1 300px' }}>
               <div style={{ marginBottom: '2rem' }}>
                 <h3 style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.2rem' }}>Telefon / WhatsApp</h3>
                 <p><a href={`tel:${SITE_CONFIG.phone}`} style={{ color: 'var(--primary-color)' }}>{SITE_CONFIG.phone}</a></p>
@@ -44,39 +38,67 @@ export default function ContactPage() {
                 <p style={{ color: 'var(--muted-color)' }}>{SITE_CONFIG.hours}</p>
               </div>
             </div>
-            <div className="uk-width-1-2" style={{ width: '50%' }}>
-              {sent ? (
-                <div style={{ textAlign: 'center', padding: '3rem' }}>
-                  <h3 style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.5rem' }}>Vielen Dank!</h3>
-                  <p style={{ color: 'var(--muted-color)' }}>Wir melden uns in Kürze.</p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit}>
-                  <div className="uk-form-controls">
-                    <label className="uk-form-label">Name *</label>
-                    <input className="uk-input" name="name" required />
-                  </div>
-                  <div className="uk-form-controls">
-                    <label className="uk-form-label">E-Mail *</label>
-                    <input className="uk-input" type="email" name="email" required />
-                  </div>
-                  <div className="uk-form-controls">
-                    <label className="uk-form-label">Telefon</label>
-                    <input className="uk-input" type="tel" name="phone" />
-                  </div>
-                  <div className="uk-form-controls">
-                    <label className="uk-form-label">Nachricht *</label>
-                    <textarea className="uk-input" name="message" rows={4} required style={{ resize: 'vertical' }} />
-                  </div>
-                  <button type="submit" className="uk-button uk-button-primary">
-                    Senden
-                  </button>
-                </form>
-              )}
+            <div style={{ flex: '1 1 300px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <Link
+                  href="/konfigurator"
+                  style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
+                    padding: '1.2rem', borderRadius: '0.75rem',
+                    border: '2px solid var(--primary-color)',
+                    color: 'var(--primary-color)',
+                    fontSize: '1rem', fontWeight: 700,
+                    textDecoration: 'none',
+                    transition: 'background 0.2s, color 0.2s',
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.background = 'var(--primary-color)'; e.currentTarget.style.color = 'white' }}
+                  onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--primary-color)' }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M12 2H2v10l9.29 9.29a1 1 0 001.42 0l6.58-6.58a1 1 0 000-1.42L12 2z"/>
+                    <circle cx="7" cy="7" r="1.5" fill="currentColor" stroke="none"/>
+                  </svg>
+                  Küchenplaner
+                </Link>
+                <Link
+                  href="/katalog"
+                  style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    padding: '1.2rem', borderRadius: '0.75rem',
+                    background: 'var(--primary-color)',
+                    color: 'white',
+                    fontSize: '1rem', fontWeight: 700,
+                    textDecoration: 'none',
+                    transition: 'opacity 0.2s',
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.opacity = '0.9' }}
+                  onMouseLeave={e => { e.currentTarget.style.opacity = '1' }}
+                >
+                  Projekt bestellen
+                </Link>
+                <Link
+                  href="/zusammenarbeit"
+                  style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    padding: '1.2rem', borderRadius: '0.75rem',
+                    border: '1.5px solid var(--border-color)',
+                    color: 'var(--main-color)',
+                    fontSize: '1rem', fontWeight: 600,
+                    textDecoration: 'none',
+                    transition: 'border-color 0.2s',
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--main-color)' }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border-color)' }}
+                >
+                  Zusammenarbeit für Unternehmen
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <PortfolioGalleryScroll />
     </>
   )
 }

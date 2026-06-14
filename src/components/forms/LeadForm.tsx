@@ -158,7 +158,7 @@ export default function LeadForm({ onClose }: { onClose?: () => void }) {
             style={{ marginTop: '0.15rem', width: 14, height: 14, accentColor: 'var(--primary-color)', flexShrink: 0 }}
           />
           <span style={{ fontSize: '0.72rem', color: 'var(--muted-color)', lineHeight: 1.5 }}>
-            Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der{' '}
+            Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäss der{' '}
             <a href="#" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>Datenschutzerklärung</a>{' '}
             und den{' '}
             <a href="#" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>AGB</a> zu.

@@ -1,68 +1,248 @@
-import Breadcrumbs from '@/components/layout/Breadcrumbs'
-import ProductOrderForm from '@/components/catalog/ProductOrderForm'
+'use client'
 
-const services = [
-  { title: 'Kostenlose Planung', desc: 'Unser Designer erstellt einen individuellen Projektplan für Ihre Küche oder Möbel.' },
-  { title: 'Kostenlose Ausmessung', desc: 'Wir kommen zu Ihnen und nehmen alle Maße vor Ort auf.' },
-  { title: 'Lieferung & Montage', desc: 'Professionelle Lieferung und Montage durch unser erfahrenes Team.' },
-  { title: 'Garantie & Kundendienst', desc: 'Bis zu 20 Jahre Garantie auf alle unsere Produkte.' },
+import { useState } from 'react'
+import Breadcrumbs from '@/components/layout/Breadcrumbs'
+import ProjektModal from '@/components/ui/ProjektModal'
+import Link from 'next/link'
+import { PROJECTS } from '@/lib/portfolio'
+
+const heroImg = PROJECTS[0]?.images[0] ?? 'https://upload-bxp-mfm.marya.ru/uf/44a/44a04095f2ab2d1d8a0953f0f753dc8e/33113d889a5866784047f62eef021760.jpg'
+
+const STEPS = [
+  {
+    num: '01',
+    title: 'Kostenloser Design-Entwurf',
+    text: 'Wir entwickeln einen individuellen Projektentwurf in dem für Sie passenden Format: Online-Planung, Treffen im Studio oder Besuch des Designers vor Ort.',
+    img: 'https://kuhnimilana.ru/media-temp/img/goods/files_big/0cZ3AVTlSyxPUwLgW_fAZRl.jpg',
+    link: { label: 'Anfrage senden', href: '/kontakt' },
+  },
+  {
+    num: '02',
+    title: 'Kostenlose Ausmessung',
+    text: 'Unsere Messtechniker kommen zu einem für Sie passenden Zeitpunkt – kostenlos und unverbindlich.',
+    img: 'https://kuhnimilana.ru/media-temp/img/goods/files_big/0LSLx8yb5i198HrrA_hY4iv.jpg',
+    link: { label: 'Termin vereinbaren', href: '/kontakt' },
+  },
+  {
+    num: '03',
+    title: 'Produktion der Küche',
+    text: 'Nach Vertragsabschluss wird der Entwurf an die Fabrik übergeben. Sie können den gesamten Produktionsablauf in Ihrem persönlichen Konto verfolgen.',
+    img: 'https://kuhnimilana.ru/media-temp/img/goods/files_big/04BaGWDW2glkI84IO_Yjrjl.jpg',
+    link: { label: 'Zum Kundenkonto', href: '#' },
+  },
+  {
+    num: '04',
+    title: 'Lieferung & Montage',
+    text: 'Wir liefern Ihre Küche zu einem passenden Zeitpunkt, montieren sie fachgerecht und schliessen die Geräte an.',
+    img: 'https://kuhnimilana.ru/media-temp/img/goods/files_big/0q9jxltANXHL3RmIm_2b9zJ.jpg',
+    link: null,
+  },
 ]
 
-const steps = [
-  'Beratungstermin vereinbaren',
-  'Kostenlose Planung & Angebot',
-  'Auftragsbestätigung',
-  'Produktion in unserer Fabrik',
-  'Lieferung & Montage',
-  'Kundendienst & Garantie',
+const GUARANTEES = [
+  {
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" strokeWidth="1.5">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      </svg>
+    ),
+    title: 'Qualität',
+    text: 'Wir arbeiten ausschliesslich mit geprüften Lieferanten zusammen und garantieren unseren Kunden konstant hohe Qualität der Waren und Dienstleistungen.',
+  },
+  {
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" strokeWidth="1.5">
+        <rect x="2" y="3" width="20" height="14" rx="2"/>
+        <path d="M8 21h8M12 17v4"/>
+      </svg>
+    ),
+    title: 'Funktionalität & Ergonomie',
+    text: 'Wir entwickeln professionelle, intelligente Lösungen, die die Lebensqualität unserer Kunden spürbar verbessern.',
+  },
+  {
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" strokeWidth="1.5">
+        <circle cx="12" cy="12" r="3"/>
+        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+    ),
+    title: 'Einzigartiges, aktuelles Design',
+    text: 'Wir entwickeln individuelle Projekte unter Berücksichtigung des Lebensstils, der Geschmäcker und Wünsche jedes einzelnen Kunden.',
+  },
+]
+
+const ALL_SERVICES = [
+  {
+    img: 'https://www.marya.ru/upload/iblock/e52/e525027bac56d69a9d43873b720fbe9a/107acddfe87a56d49d8c2481152f4220.jpg',
+    title: 'Kostenloser Design-Entwurf',
+    desc: 'Professionelle Designer entwickeln für Sie einen individuellen Design-Entwurf – genau auf Ihre Wünsche abgestimmt.',
+  },
+  {
+    img: 'https://www.marya.ru/upload/iblock/ccc/ccc368634a9d38beab9c62839e526053/33a2a32e1c73ff55c5578462c823accc.jpg',
+    title: 'Kostenlose Ausmessung',
+    desc: 'Rufen Sie uns an unter +41 77 283 75 10 (kostenlos, rund um die Uhr) oder füllen Sie das Formular aus.',
+  },
+  {
+    img: 'https://www.marya.ru/upload/iblock/f02/f02ba2a0c44dc54d7ecc6892a3de1fea/5adeba87c905a860f048c5af20a9af4b.jpg',
+    title: 'Faire Kreditraten ohne Aufpreis',
+    desc: 'Sie möchten Ihre neue Küche nicht sofort bezahlen, sondern in monatlichen Raten? Wir bieten faire Konditionen – ganz ohne versteckte Kosten.',
+  },
+  {
+    img: 'https://www.marya.ru/upload/iblock/f7e/f7e0c3be15228450bf5b2df622fa8bef/e00ec2fc725710d2b1b6db9e7a35c6cb.jpg',
+    title: 'Lieferung & Montage',
+    desc: 'Vertrauen Sie die Endmontage und Installation Ihrer Küche unseren Profis an. Lieferung und Aufbau aus einer Hand.',
+  },
+  {
+    img: 'https://www.marya.ru/upload/iblock/964/964d72357855cbf95d7791a3806fe8dd/7ab354b30f4082d356b8d90a96bf6871.jpg',
+    title: '20 Jahre Garantie',
+    desc: 'Das Gestell ist die Basis jeder Küche – von seiner Qualität und Langlebigkeit hängt die Lebensdauer des gesamten Möbels ab. Wir garantieren beides.',
+  },
+  {
+    img: 'https://www.marya.ru/upload/iblock/2a8/2a817f35bd7fe4034647e546b9c8d213/691f72083fcd6f65b8950f7060c83381.jpg',
+    title: 'Preisliste Serviceleistungen',
+    desc: 'Hier finden Sie das vollständige Verzeichnis aller durchgeführten Arbeiten und die aktuellen Preise.',
+  },
 ]
 
 export default function ServicesPage() {
+  const [formOpen, setFormOpen] = useState(false)
   return (
     <>
-      <Breadcrumbs items={[{ label: 'Services' }]} />
-      <section className="uk-section uk-section-large">
-        <div className="uk-container">
-          <h1 className="section-heading">Unsere Services</h1>
-          <div className="uk-grid" style={{ gap: '1.5rem', marginTop: '2rem' }}>
-            {services.map((s) => (
-              <div key={s.title} className="uk-width-1-2" style={{ width: '50%' }}>
-                <div className="glass-panel" style={{ padding: '2rem', background: 'var(--light-color)', borderRadius: '1rem', height: '100%' }}>
-                  <h3 style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.3rem', marginBottom: '0.5rem' }}>{s.title}</h3>
-                  <p style={{ fontSize: '0.875rem', color: 'var(--muted-color)' }}>{s.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      <Breadcrumbs items={[{ label: 'Dienstleistungen' }]} />
 
-          <h2 style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.8rem', textAlign: 'center', marginTop: '4rem' }}>
-            Bestellprozess
-          </h2>
-          <div className="uk-grid" style={{ gap: '1rem', marginTop: '2rem' }}>
-            {steps.map((step, i) => (
-              <div key={step} className="uk-width-1-3@m" style={{ width: '33.333%' }}>
-                <div style={{
-                  padding: '1.5rem',
-                  textAlign: 'center',
-                  background: 'var(--light-color)',
-                  borderRadius: '1rem',
-                }}>
+      {/* ── Hero ──────────────────────────────────────────────────── */}
+      <section style={{ position: 'relative', height: '24rem', overflow: 'hidden' }}>
+        <img src={heroImg} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.25) 100%)',
+          display: 'flex', alignItems: 'center',
+        }}>
+          <div className="uk-container">
+            <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.72rem', letterSpacing: '0.16em', textTransform: 'uppercase', marginBottom: '0.6rem' }}>
+              Dienstleistungen
+            </p>
+            <h1 style={{ fontFamily: 'var(--sb-reg)', fontSize: 'clamp(2rem, 4vw, 3.2rem)', color: 'white', margin: '0 0 1rem', lineHeight: 1.15 }}>
+              Unsere Dienstleistungen
+            </h1>
+            <Link
+              href="/kontakt"
+              className="uk-button uk-button-inversed"
+              style={{ fontSize: '0.9rem', padding: '0.6rem 1.8rem' }}
+            >
+              Kostenlose Beratung anfragen
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4 Steps ──────────────────────────────────────────────── */}
+      <section className="uk-section">
+        <div className="uk-container">
+          <p style={{ color: 'var(--muted-color)', lineHeight: 1.8, maxWidth: 720, marginBottom: '3rem' }}>
+            Die Herstellung einer Küche ist ein komplexer, mehrstufiger Prozess. Für unsere Kunden sind es jedoch nur vier einfache Schritte – begleitet von einem persönlichen Designer.
+          </p>
+
+          <div className="steps-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.25rem' }}>
+            {STEPS.map((s) => (
+              <div key={s.num} style={{ borderRadius: '0.85rem', overflow: 'hidden', border: '1px solid var(--border-color)', background: 'white' }}>
+                <div style={{ position: 'relative', height: 180, overflow: 'hidden' }}>
+                  <img src={s.img} alt={s.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   <div style={{
-                    width: 40, height: 40, borderRadius: '50%',
+                    position: 'absolute', top: '0.75rem', left: '0.75rem',
+                    width: 36, height: 36, borderRadius: '50%',
                     background: 'var(--primary-color)', color: 'white',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    margin: '0 auto 0.5rem', fontWeight: 500,
+                    fontSize: '0.82rem', fontWeight: 700,
                   }}>
-                    {i + 1}
+                    {s.num}
                   </div>
-                  <span>{step}</span>
+                </div>
+                <div style={{ padding: '1.25rem' }}>
+                  <h3 style={{ fontFamily: 'var(--sb-reg)', fontSize: '1rem', fontWeight: 700, marginBottom: '0.5rem' }}>{s.title}</h3>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--muted-color)', lineHeight: 1.7, marginBottom: s.link ? '0.75rem' : 0 }}>{s.text}</p>
+                  {s.link && (
+                    <Link href={s.link.href} style={{ color: 'var(--primary-color)', fontSize: '0.82rem', fontWeight: 600, textDecoration: 'none' }}>
+                      {s.link.label} →
+                    </Link>
+                  )}
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <ProductOrderForm productName="Ihr Projekt" />
+
+      {/* ── Guarantees ───────────────────────────────────────────── */}
+      <section style={{ background: '#0f0f0f', padding: '5rem 0' }}>
+        <div className="uk-container">
+          <p style={{
+            fontSize: '0.72rem', letterSpacing: '0.16em', textTransform: 'uppercase',
+            color: 'var(--primary-color)', marginBottom: '0.75rem', textAlign: 'center',
+          }}>
+            Milaro garantiert seinen Kunden
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2.5rem', marginTop: '2.5rem' }}>
+            {GUARANTEES.map((g) => (
+              <div key={g.title} style={{ textAlign: 'center' }}>
+                <div style={{ marginBottom: '1rem' }}>{g.icon}</div>
+                <h3 style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.15rem', color: 'white', marginBottom: '0.75rem' }}>{g.title}</h3>
+                <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.88rem', lineHeight: 1.7, margin: 0 }}>{g.text}</p>
+              </div>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+            <Link href="/kontakt" className="uk-button uk-button-inversed" style={{ fontSize: '0.9rem', padding: '0.6rem 2rem' }}>
+              Anfrage senden
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── All Services ─────────────────────────────────────────── */}
+      <section className="uk-section">
+        <div className="uk-container">
+          <h2 style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.6rem', textAlign: 'center', marginBottom: '2.5rem' }}>
+            Unsere Leistungen
+          </h2>
+          <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem' }}>
+            {ALL_SERVICES.map((svc) => (
+              <div
+                key={svc.title}
+                onClick={() => setFormOpen(true)}
+                style={{ borderRadius: '0.85rem', overflow: 'hidden', border: '1px solid var(--border-color)', background: 'white', cursor: 'pointer', transition: 'box-shadow 0.2s' }}
+                onMouseEnter={e => (e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.1)')}
+                onMouseLeave={e => (e.currentTarget.style.boxShadow = 'none')}
+              >
+                <div style={{ height: 160, overflow: 'hidden' }}>
+                  <img src={svc.img} alt={svc.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                </div>
+                <div style={{ padding: '1.25rem' }}>
+                  <h3 style={{ fontFamily: 'var(--sb-reg)', fontSize: '1rem', fontWeight: 700, marginBottom: '0.4rem' }}>{svc.title}</h3>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--muted-color)', lineHeight: 1.7, margin: 0 }}>{svc.desc}</p>
+                  <span style={{ color: 'var(--primary-color)', fontSize: '0.82rem', fontWeight: 600, marginTop: '0.75rem', display: 'inline-block' }}>
+                    Mehr erfahren →
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Modal ──────────────────────────────────────────────── */}
+      <ProjektModal open={formOpen} onClose={() => setFormOpen(false)} />
+
+      <style>{`
+        @media (max-width: 900px) {
+          .steps-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .services-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+        @media (max-width: 580px) {
+          .steps-grid { grid-template-columns: 1fr !important; }
+          .services-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </>
   )
 }

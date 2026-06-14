@@ -6,21 +6,26 @@ export default function CatalogPreview() {
     <section className="uk-section">
       <div className="uk-container">
         <h2 className="section-heading">Katalog</h2>
-        <p style={{ textAlign: 'center', color: 'var(--muted-color)', marginBottom: '2rem' }}>
+        <p style={{ textAlign: 'center', color: 'var(--muted-color)', marginBottom: '2.5rem' }}>
           Möbel und Technik für das ganze Haus
         </p>
-        <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <div className="catalog-preview-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.25rem' }}>
           {CATEGORIES.map((cat) => (
-            <Link key={cat.slug} href={`/katalog/${cat.slug}`} style={{ width: '23%', minWidth: 200, textDecoration: 'none', color: 'inherit' }}>
-              <div style={{ height: '12rem', borderRadius: '1rem', overflow: 'hidden', marginBottom: '0.8rem', position: 'relative' }}>
-                <img src={cat.image} alt={cat.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.2)' }} />
+            <Link key={cat.slug} href={`/katalog/${cat.slug}`} className="cat-card">
+              <div className="cat-card-wrap">
+                <img src={cat.image} alt={cat.name} className="cat-card-img" loading="lazy" />
+                <span className="cat-card-badge">Katalog</span>
+                <div className="cat-card-overlay" />
               </div>
-              <h3 style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.1rem', textAlign: 'center' }}>{cat.name}</h3>
-              <p style={{ fontSize: '0.75rem', color: 'var(--muted-color)', textAlign: 'center' }}>{cat.count} Produkte</p>
+              <div className="cat-card-title">{cat.name}</div>
+              <div className="cat-card-sub">{cat.count} Modelle</div>
             </Link>
           ))}
         </div>
+        <style>{`
+          @media (max-width: 900px) { .catalog-preview-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+          @media (max-width: 580px) { .catalog-preview-grid { grid-template-columns: 1fr !important; } }
+        `}</style>
       </div>
     </section>
   )

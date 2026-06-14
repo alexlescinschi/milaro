@@ -4,8 +4,8 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
-  title: 'milaro.ch — Maßgefertigte Küchen und Möbel in der Schweiz',
-  description: 'milaro.ch: Maßgefertigte Küchen, Schränke, Bäder und Sofas. Schweizer Qualität und individuelles Design für Ihr Zuhause.',
+  title: 'milaro.ch — Massgefertigte Küchen und Möbel in der Schweiz',
+  description: 'milaro.ch: Massgefertigte Küchen, Schränke, Bäder und Sofas. Schweizer Qualität und individuelles Design für Ihr Zuhause.',
 }
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        <main style={{ paddingTop: '88px' }}>
+        <main className="main-content">
           {children}
         </main>
         <Footer />
