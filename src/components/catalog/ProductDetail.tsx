@@ -314,12 +314,44 @@ const products: Record<string, Product> = {
     desc: 'Jazz — Rhythmus und Eleganz im Küchenraum. Puristisches Design mit perfekter Balance zwischen Ästhetik und Funktionalität. Klare Linien und hochwertige Materialien.',
     price: 'ab CHF 14',
     variants: [
-      { name: 'Weiss Glanz', color: '#f5f5f0', images: ['/images/portfolio/43bcb3af7d7aee6e95a354781f622c81.jpg'] },
-      { name: 'Grau Glanz', color: '#9e9e9e', images: ['/images/portfolio/43bcb3af7d7aee6e95a354781f622c81.jpg'] },
-      { name: 'Schwarz', color: '#1a1a1a', images: ['/images/portfolio/43bcb3af7d7aee6e95a354781f622c81.jpg'] },
-      { name: 'Dunkelgrün', color: '#3d5a3c', images: ['/images/portfolio/43bcb3af7d7aee6e95a354781f622c81.jpg'] },
-      { name: 'Navy', color: '#2c3e5a', images: ['/images/portfolio/43bcb3af7d7aee6e95a354781f622c81.jpg'] },
-      { name: 'Sand', color: '#d4c5a0', images: ['/images/portfolio/43bcb3af7d7aee6e95a354781f622c81.jpg'] },
+      { name: 'Weiss Glanz', color: '#f5f5f0', images: [
+        '/images/portfolio/6d1ed694f776e465fa77a1192befa111.jpg',
+        '/images/portfolio/9f706c1f18bbff9e2db198992dec3fdf.jpg',
+        '/images/portfolio/ff2758d04d24d6ccfbd270f616a44ce4.jpg',
+      ] },
+      { name: 'Grau Glanz', color: '#9e9e9e', images: [
+        '/images/portfolio/957902645e29383dd443b08eb1003514.jpg',
+        '/images/portfolio/9c9ccc42e8ef3090d5487ab19a787f9f.jpg',
+        '/images/portfolio/7d351c5766222ffdf67ce56d8dbac2b1.jpg',
+        '/images/portfolio/f06aa56b699cc6f38ab9cb7e43d657cd.jpg',
+        '/images/portfolio/38f11719b76918aba675c86d454a45c3.jpg',
+        '/images/portfolio/37bdee255b0cd1ef9acf07b31883cbc9.jpg',
+      ] },
+      { name: 'Schwarz', color: '#1a1a1a', images: [
+        '/images/portfolio/7d40cbf53b48c8b595bb6b79f0dd469c.jpg',
+        '/images/portfolio/2a0944207f6f7b927b621dc0ea8a4fa6.jpg',
+        '/images/portfolio/cde84e0b95cfbc0323e75ecefdbf93fb.jpg',
+      ] },
+      { name: 'Dunkelgrün', color: '#3d5a3c', images: [
+        '/images/portfolio/be43cbe63f572c6bc58d83ca29748817.jpg',
+        '/images/portfolio/11a5cc59c3ac9f9ec8797aeb65d8198a.jpg',
+        '/images/portfolio/eff1ec6fa23f9c5574b6f2a12ce41348.jpg',
+        '/images/portfolio/1ee1803d09e429b59c559bcec45f5e15.jpg',
+        '/images/portfolio/1d0dc21736a514666014e954479f06c5.jpg',
+        '/images/portfolio/78109d59b74cae2eb37b2b4d9f3bf07c.jpg',
+      ] },
+      { name: 'Navy', color: '#2c3e5a', images: [
+        '/images/portfolio/ea7ac98bc29e69d68b3b5025b906a038.jpg',
+        '/images/portfolio/3773f04a268d1a56ee1a4ccd82704ce9.jpg',
+        '/images/portfolio/2fee5ceb877271d8c5b2a643315706b9.jpg',
+        '/images/portfolio/3812a603ae2e2e623e92bb7e7dec2dab.jpg',
+        '/images/portfolio/1d39c91c30b2da0b377ea81ff2b954cb.jpg',
+      ] },
+      { name: 'Sand', color: '#d4c5a0', images: [
+        '/images/portfolio/45d8be781e313f4d21761d23507ff183.jpg',
+        '/images/portfolio/8d29ecc0d9efc1e507e91adec2c4a8d4.jpg',
+        '/images/portfolio/16af5acbf154bd8e5d6c4278d57f716d.jpg',
+      ] },
     ],
     specs: [
       { label: 'Material', value: 'MDF / HPL / Email' },
@@ -362,9 +394,24 @@ const products: Record<string, Product> = {
     desc: 'Jazz Intuit — die Weiterentwicklung des Jazz-Konzepts mit noch mehr Funktionalität. Intelligente Aufbewahrungslösungen und durchdachte Ergonomie.',
     price: 'ab CHF 12',
     variants: [
-      { name: 'Weiss Matt', color: '#f0f0ec', images: ['/images/portfolio/356191496987df7d8c366e464adb839b.jpg'] },
-      { name: 'Grau', color: '#999999', images: ['/images/portfolio/356191496987df7d8c366e464adb839b.jpg'] },
-      { name: 'Beige', color: '#dcc8a0', images: ['/images/portfolio/356191496987df7d8c366e464adb839b.jpg'] },
+      { name: 'Weiss Matt', color: '#f0f0ec', images: [
+        '/images/portfolio/6d1ed694f776e465fa77a1192befa111.jpg',
+        '/images/portfolio/9f706c1f18bbff9e2db198992dec3fdf.jpg',
+        '/images/portfolio/ff2758d04d24d6ccfbd270f616a44ce4.jpg',
+      ] },
+      { name: 'Grau', color: '#999999', images: [
+        '/images/portfolio/957902645e29383dd443b08eb1003514.jpg',
+        '/images/portfolio/9c9ccc42e8ef3090d5487ab19a787f9f.jpg',
+        '/images/portfolio/7d351c5766222ffdf67ce56d8dbac2b1.jpg',
+        '/images/portfolio/f06aa56b699cc6f38ab9cb7e43d657cd.jpg',
+        '/images/portfolio/38f11719b76918aba675c86d454a45c3.jpg',
+        '/images/portfolio/37bdee255b0cd1ef9acf07b31883cbc9.jpg',
+      ] },
+      { name: 'Beige', color: '#dcc8a0', images: [
+        '/images/portfolio/45d8be781e313f4d21761d23507ff183.jpg',
+        '/images/portfolio/8d29ecc0d9efc1e507e91adec2c4a8d4.jpg',
+        '/images/portfolio/16af5acbf154bd8e5d6c4278d57f716d.jpg',
+      ] },
     ],
     specs: [
       { label: 'Material', value: 'MDF / HPL' },
@@ -405,9 +452,12 @@ const products: Record<string, Product> = {
     desc: 'Jazz Kabinet — ein Designklassiker für Ihre Aufbewahrung. Schlicht, elegant und unglaublich vielseitig. Perfekt für Wohn- und Schlafzimmer.',
     price: 'ab CHF 8',
     variants: [
-      { name: 'Weiss', color: '#fafafa', images: ['/images/portfolio/43bcb3af7d7aee6e95a354781f622c81.jpg'] },
-      { name: 'Grau', color: '#999999', images: ['/images/portfolio/43bcb3af7d7aee6e95a354781f622c81.jpg'] },
-      { name: 'Eiche', color: '#b8956e', images: ['/images/portfolio/43bcb3af7d7aee6e95a354781f622c81.jpg'] },
+      { name: 'Weiss', color: '#fafafa', images: ['/images/portfolio/db53c589c2c71edf9c15cff02095a649.jpg'] },
+      { name: 'Grau', color: '#999999', images: [
+        '/images/portfolio/f296dd17f9b554063edfd1831217f10f.jpg',
+        '/images/portfolio/dfc8ab70d360e72a6c6d68cf3fd9d66f.jpg',
+      ] },
+      { name: 'Rot', color: '#bb5338', images: ['/images/portfolio/fc6fa4514f9e7f00421d01119211d555.jpg'] },
     ],
     specs: [
       { label: 'Material', value: 'MDF / Spanplatte' },
