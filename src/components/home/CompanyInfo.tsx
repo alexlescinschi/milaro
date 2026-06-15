@@ -36,7 +36,7 @@ export default function CompanyInfo() {
               Beschreiben Sie Ihren Wunsch — wir erstellen Ihnen ein kostenloses 3D-Design und eine unverbindliche Kalkulation.
             </p>
             <img
-              src="https://www.marya.ru/promo/home3/img/prod/prod1.jpg"
+              src="/images/promo/prod/prod1.jpg"
               alt="Küchenplanung"
               style={{ width: '100%', height: '22rem', objectFit: 'cover', borderRadius: '1rem' }}
             />

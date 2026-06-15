@@ -4,19 +4,19 @@ import { useState, useRef } from 'react'
 import Link from 'next/link'
 import LeadForm from '@/components/forms/LeadForm'
 
-const BASE_IMG = 'https://kuhnimilana.ru/media-temp/img/goods/files/'
-const BASE_VID = 'https://kuhnimilana.ru/media-temp/footage/'
+const BASE_IMG = '/images/products/'
+const BASE_VID = '/videos/products/'
 
 const KUECHEN = [
-  { name: 'Grafis',   slug: 'grafis',   tags: ['Modern', 'Schwarz'], materials: 'PVC · Kunststoff',               img: BASE_IMG + '07pxOyAzMM8LAKQhj_P1p1s.jpg', video: BASE_VID + '698d943e3bc07.mp4' },
-  { name: 'Granby',   slug: 'granby',   tags: ['Modern', 'Grau'],    materials: 'PVC · Email',                    img: BASE_IMG + '0cZ3AVTlSyxPUwLgW_fAZRl.jpg', video: BASE_VID + '%D0%93%D1%80%D0%B0%D0%BD%D0%B1%D0%B83__92pct_smaller.mp4' },
-  { name: 'Budbin',   slug: 'budbin',   tags: ['Modern', 'Weiss'],    materials: 'PVC · Email',                    img: BASE_IMG + '0jifM8SdyZJQgxzHv_flxWI.jpg', video: BASE_VID + '%D0%91%D1%83%D0%B4%D0%B1%D0%B8%D0%BD__93pct_smaller.mp4' },
-  { name: 'Kolaria',  slug: 'kolaria',  tags: ['Modern', 'Weiss'],    materials: 'PVC · Kunststoff · Email · Acryl', img: BASE_IMG + '0kesx1Y2Pt92wkDDx_04Vkl.jpg', video: BASE_VID + '%D0%9A%D0%BE%D0%BB%D0%B0%D1%80%D0%B8%D1%8F__92pct_smaller.mp4' },
-  { name: 'Roshedu',  slug: 'roshedu',  tags: ['Modern', 'Grau'],    materials: 'PVC · Email',                    img: BASE_IMG + '097K8FXmtcZoVqJVy_lu4a1.jpg',  video: BASE_VID + '%D0%A0%D0%BE%D1%88%D0%B5%D0%B4%D1%83__84pct_smaller.mp4' },
-  { name: 'Brix',     slug: 'brix',     tags: ['Modern', 'Weiss'],    materials: 'PVC · Kunststoff · Email · Acryl', img: BASE_IMG + '0q9jxltANXHL3RmIm_2b9zJ.jpg',  video: BASE_VID + '%D0%91%D1%80%D0%B8%D0%BA%D1%81__92pct_smaller.mp4' },
-  { name: 'Sadbury',  slug: 'sadbury',  tags: ['Modern', 'Grau'],    materials: 'PVC · Email',                    img: BASE_IMG + '05iefZ2FsYxLSnvb3_z5ytb.jpg',  video: BASE_VID + '%D0%A1%D0%B0%D0%B4%D0%B1%D0%B5%D1%80%D0%B8__90pct_smaller.mp4' },
-  { name: 'Tavira',   slug: 'tavira',   tags: ['Modern'],            materials: 'PVC · Kunststoff · Furnier',     img: BASE_IMG + '04BaGWDW2glkI84IO_Yjrjl.jpg',  video: BASE_VID + '%D0%A2%D0%B0%D0%B2%D0%B8%D1%80%D0%B0__90pct_smaller.mp4' },
-  { name: 'Richmond', slug: 'richmond', tags: ['Modern', 'Weiss'],    materials: 'PVC · Email',                    img: BASE_IMG + '0LSLx8yb5i198HrrA_hY4iv.jpg',  video: BASE_VID + '%D0%A0%D0%B8%D1%87%D0%BC%D0%BE%D0%BD%D0%B4__91pct_smaller.mp4' },
+  { name: 'Grafis',   slug: 'grafis',   tags: ['Modern', 'Schwarz'], materials: 'PVC · Kunststoff',               img: BASE_IMG + '07pxOyAzMM8LAKQhj_P1p1s.jpg', video: BASE_VID + 'Графис__93pct_smaller.mp4' },
+  { name: 'Granby',   slug: 'granby',   tags: ['Modern', 'Grau'],    materials: 'PVC · Email',                    img: BASE_IMG + '0cZ3AVTlSyxPUwLgW_fAZRl.jpg', video: BASE_VID + '������������3__92pct_smaller.mp4' },
+  { name: 'Budbin',   slug: 'budbin',   tags: ['Modern', 'Weiss'],    materials: 'PVC · Email',                    img: BASE_IMG + '0jifM8SdyZJQgxzHv_flxWI.jpg', video: BASE_VID + '������������__93pct_smaller.mp4' },
+  { name: 'Kolaria',  slug: 'kolaria',  tags: ['Modern', 'Weiss'],    materials: 'PVC · Kunststoff · Email · Acryl', img: BASE_IMG + '0kesx1Y2Pt92wkDDx_04Vkl.jpg', video: BASE_VID + '��������������__92pct_smaller.mp4' },
+  { name: 'Roshedu',  slug: 'roshedu',  tags: ['Modern', 'Grau'],    materials: 'PVC · Email',                    img: BASE_IMG + '097K8FXmtcZoVqJVy_lu4a1.jpg',  video: BASE_VID + '������������__84pct_smaller.mp4' },
+  { name: 'Brix',     slug: 'brix',     tags: ['Modern', 'Weiss'],    materials: 'PVC · Kunststoff · Email · Acryl', img: BASE_IMG + '0q9jxltANXHL3RmIm_2b9zJ.jpg',  video: BASE_VID + '����������__92pct_smaller.mp4' },
+  { name: 'Sadbury',  slug: 'sadbury',  tags: ['Modern', 'Grau'],    materials: 'PVC · Email',                    img: BASE_IMG + '05iefZ2FsYxLSnvb3_z5ytb.jpg',  video: BASE_VID + '��������������__90pct_smaller.mp4' },
+  { name: 'Tavira',   slug: 'tavira',   tags: ['Modern'],            materials: 'PVC · Kunststoff · Furnier',     img: BASE_IMG + '04BaGWDW2glkI84IO_Yjrjl.jpg',  video: BASE_VID + '������������__90pct_smaller.mp4' },
+  { name: 'Richmond', slug: 'richmond', tags: ['Modern', 'Weiss'],    materials: 'PVC · Email',                    img: BASE_IMG + '0LSLx8yb5i198HrrA_hY4iv.jpg',  video: BASE_VID + '��������������__91pct_smaller.mp4' },
 ]
 
 export default function KuehnenShowcase() {

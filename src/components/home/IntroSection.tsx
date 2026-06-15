@@ -4,7 +4,7 @@ export default function IntroSection() {
   return (
     <section id="intro" className="uk-section" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', position: 'relative' }}>
       <img
-        src="https://www.marya.ru/promo/home3/img/nav/vantages.jpg"
+        src="/images/promo/nav/vantages.jpg"
         alt=""
         style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.06 }}
       />

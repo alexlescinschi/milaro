@@ -4,15 +4,15 @@ import { useRef, useEffect } from 'react'
 import Link from 'next/link'
 
 const KITCHENS = [
-  { name: 'Grafis',   slug: 'grafis',   img: 'https://kuhnimilana.ru/media-temp/img/goods/files/07pxOyAzMM8LAKQhj_P1p1s.jpg' },
-  { name: 'Granby',   slug: 'granby',   img: 'https://kuhnimilana.ru/media-temp/img/goods/files/0cZ3AVTlSyxPUwLgW_fAZRl.jpg' },
-  { name: 'Budbin',   slug: 'budbin',   img: 'https://kuhnimilana.ru/media-temp/img/goods/files/0jifM8SdyZJQgxzHv_flxWI.jpg' },
-  { name: 'Kolaria',  slug: 'kolaria',  img: 'https://kuhnimilana.ru/media-temp/img/goods/files/0kesx1Y2Pt92wkDDx_04Vkl.jpg' },
-  { name: 'Roshedu',  slug: 'roshedu',  img: 'https://kuhnimilana.ru/media-temp/img/goods/files/097K8FXmtcZoVqJVy_lu4a1.jpg' },
-  { name: 'Brix',     slug: 'brix',     img: 'https://kuhnimilana.ru/media-temp/img/goods/files/0q9jxltANXHL3RmIm_2b9zJ.jpg' },
-  { name: 'Sadbury',  slug: 'sadbury',  img: 'https://kuhnimilana.ru/media-temp/img/goods/files/05iefZ2FsYxLSnvb3_z5ytb.jpg' },
-  { name: 'Tavira',   slug: 'tavira',   img: 'https://kuhnimilana.ru/media-temp/img/goods/files/04BaGWDW2glkI84IO_Yjrjl.jpg' },
-  { name: 'Richmond', slug: 'richmond', img: 'https://kuhnimilana.ru/media-temp/img/goods/files/0LSLx8yb5i198HrrA_hY4iv.jpg' },
+  { name: 'Grafis',   slug: 'grafis',   img: '/images/products/07pxOyAzMM8LAKQhj_P1p1s.jpg' },
+  { name: 'Granby',   slug: 'granby',   img: '/images/products/0cZ3AVTlSyxPUwLgW_fAZRl.jpg' },
+  { name: 'Budbin',   slug: 'budbin',   img: '/images/products/0jifM8SdyZJQgxzHv_flxWI.jpg' },
+  { name: 'Kolaria',  slug: 'kolaria',  img: '/images/products/0kesx1Y2Pt92wkDDx_04Vkl.jpg' },
+  { name: 'Roshedu',  slug: 'roshedu',  img: '/images/products/097K8FXmtcZoVqJVy_lu4a1.jpg' },
+  { name: 'Brix',     slug: 'brix',     img: '/images/products/0q9jxltANXHL3RmIm_2b9zJ.jpg' },
+  { name: 'Sadbury',  slug: 'sadbury',  img: '/images/products/05iefZ2FsYxLSnvb3_z5ytb.jpg' },
+  { name: 'Tavira',   slug: 'tavira',   img: '/images/products/04BaGWDW2glkI84IO_Yjrjl.jpg' },
+  { name: 'Richmond', slug: 'richmond', img: '/images/products/0LSLx8yb5i198HrrA_hY4iv.jpg' },
 ]
 
 export default function KultSection() {

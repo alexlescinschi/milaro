@@ -6,7 +6,7 @@ import LeadForm from '@/components/forms/LeadForm'
 const MATERIALS = [
   {
     name: 'PVC-Folie',
-    img: 'https://kuhnimilana.ru/media-temp/img/goods/files/07pxOyAzMM8LAKQhj_P1p1s.jpg',
+    img: '/images/products/07pxOyAzMM8LAKQhj_P1p1s.jpg',
     prodTime: 'ab 5 Arb.tagen',
     milling: true,
     specs: [
@@ -20,7 +20,7 @@ const MATERIALS = [
   },
   {
     name: 'Kunststoff',
-    img: 'https://kuhnimilana.ru/media-temp/img/goods/files/0llAOoEtlEpe8Elrr_rsYgM.jpg',
+    img: '/images/products/0llAOoEtlEpe8Elrr_rsYgM.jpg',
     prodTime: 'ab 10 Arb.tagen',
     milling: false,
     specs: [
@@ -34,7 +34,7 @@ const MATERIALS = [
   },
   {
     name: 'Email-Lack',
-    img: 'https://kuhnimilana.ru/media-temp/img/goods/files/0JcvEiFCi7vyZARhF_PaPtm.jpg',
+    img: '/images/products/0JcvEiFCi7vyZARhF_PaPtm.jpg',
     prodTime: 'ab 20 Arb.tagen',
     milling: true,
     specs: [
@@ -48,7 +48,7 @@ const MATERIALS = [
   },
   {
     name: 'Alvic Luxe',
-    img: 'https://kuhnimilana.ru/media-temp/img/goods/files/0bDfPpqCEXjOAK4Nn_SWQS5.jpg',
+    img: '/images/products/0bDfPpqCEXjOAK4Nn_SWQS5.jpg',
     prodTime: 'ab 10 Arb.tagen',
     milling: false,
     specs: [
@@ -62,7 +62,7 @@ const MATERIALS = [
   },
   {
     name: 'Furnier',
-    img: 'https://kuhnimilana.ru/media-temp/img/goods/files/0awmMgMfEdx7o84WK_IodU7.jpg',
+    img: '/images/products/0awmMgMfEdx7o84WK_IodU7.jpg',
     prodTime: 'ab 10 Arb.tagen',
     milling: false,
     specs: [
@@ -76,7 +76,7 @@ const MATERIALS = [
   },
   {
     name: 'Massivholz',
-    img: 'https://kuhnimilana.ru/media-temp/img/goods/files/06YARKy5YnzINeBQy_BURUE.jpg',
+    img: '/images/products/06YARKy5YnzINeBQy_BURUE.jpg',
     prodTime: 'ab 20 Arb.tagen',
     milling: true,
     specs: [
@@ -254,7 +254,7 @@ export default function MaterialsSection() {
             {/* Banner */}
             <div style={{ position: 'relative', height: 200, borderRadius: '1.2rem 1.2rem 0 0', overflow: 'hidden', flexShrink: 0 }}>
               <img
-                src="https://www.marya.ru/promo/home3/img/models/mix22.jpg"
+                src="/images/promo/models/mix22.jpg"
                 alt=""
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />

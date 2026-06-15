@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
 const slides = [
-  { title: 'Frühlingsangebote', text: 'Sichern Sie sich bis zu 30% Rabatt!', img: 'https://www.marya.ru/promo/home3/img/models/trento1.jpg' },
-  { title: 'Kostenlose Planung', text: 'Vereinbaren Sie einen Termin', img: 'https://www.marya.ru/promo/home3/img/models/nicolle.jpg' },
-  { title: 'Neu: Badezimmer Kollektion', text: 'Entdecken Sie unsere Modelle', img: 'https://www.marya.ru/promo/home3/img/nav/baths1.jpg' },
+  { title: 'Frühlingsangebote', text: 'Sichern Sie sich bis zu 30% Rabatt!', img: '/images/promo/models/trento1.jpg' },
+  { title: 'Kostenlose Planung', text: 'Vereinbaren Sie einen Termin', img: '/images/promo/models/nicolle.jpg' },
+  { title: 'Neu: Badezimmer Kollektion', text: 'Entdecken Sie unsere Modelle', img: '/images/promo/nav/baths1.jpg' },
 ]
 
 export default function MainSlider() {

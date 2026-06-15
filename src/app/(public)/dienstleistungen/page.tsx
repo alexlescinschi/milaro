@@ -6,35 +6,35 @@ import ProjektModal from '@/components/ui/ProjektModal'
 import Link from 'next/link'
 import { PROJECTS } from '@/lib/portfolio'
 
-const heroImg = PROJECTS[0]?.images[0] ?? 'https://upload-bxp-mfm.marya.ru/uf/44a/44a04095f2ab2d1d8a0953f0f753dc8e/33113d889a5866784047f62eef021760.jpg'
+const heroImg = PROJECTS[0]?.images[0] ?? '/images/portfolio/uf/44a/44a04095f2ab2d1d8a0953f0f753dc8e/33113d889a5866784047f62eef021760.jpg'
 
 const STEPS = [
   {
     num: '01',
     title: 'Kostenloser Design-Entwurf',
     text: 'Wir entwickeln einen individuellen Projektentwurf in dem für Sie passenden Format: Online-Planung, Treffen im Studio oder Besuch des Designers vor Ort.',
-    img: 'https://kuhnimilana.ru/media-temp/img/goods/files_big/0cZ3AVTlSyxPUwLgW_fAZRl.jpg',
+    img: '/images/products/0cZ3AVTlSyxPUwLgW_fAZRl.jpg',
     link: { label: 'Anfrage senden', href: '/kontakt' },
   },
   {
     num: '02',
     title: 'Kostenlose Ausmessung',
     text: 'Unsere Messtechniker kommen zu einem für Sie passenden Zeitpunkt – kostenlos und unverbindlich.',
-    img: 'https://kuhnimilana.ru/media-temp/img/goods/files_big/0LSLx8yb5i198HrrA_hY4iv.jpg',
+    img: '/images/products/0LSLx8yb5i198HrrA_hY4iv.jpg',
     link: { label: 'Termin vereinbaren', href: '/kontakt' },
   },
   {
     num: '03',
     title: 'Produktion der Küche',
     text: 'Nach Vertragsabschluss wird der Entwurf an die Fabrik übergeben. Sie können den gesamten Produktionsablauf in Ihrem persönlichen Konto verfolgen.',
-    img: 'https://kuhnimilana.ru/media-temp/img/goods/files_big/04BaGWDW2glkI84IO_Yjrjl.jpg',
+    img: '/images/products/04BaGWDW2glkI84IO_Yjrjl.jpg',
     link: { label: 'Zum Kundenkonto', href: '#' },
   },
   {
     num: '04',
     title: 'Lieferung & Montage',
     text: 'Wir liefern Ihre Küche zu einem passenden Zeitpunkt, montieren sie fachgerecht und schliessen die Geräte an.',
-    img: 'https://kuhnimilana.ru/media-temp/img/goods/files_big/0q9jxltANXHL3RmIm_2b9zJ.jpg',
+    img: '/images/products/0q9jxltANXHL3RmIm_2b9zJ.jpg',
     link: null,
   },
 ]
@@ -73,32 +73,32 @@ const GUARANTEES = [
 
 const ALL_SERVICES = [
   {
-    img: 'https://www.marya.ru/upload/iblock/e52/e525027bac56d69a9d43873b720fbe9a/107acddfe87a56d49d8c2481152f4220.jpg',
+    img: '/images/services/',
     title: 'Kostenloser Design-Entwurf',
     desc: 'Professionelle Designer entwickeln für Sie einen individuellen Design-Entwurf – genau auf Ihre Wünsche abgestimmt.',
   },
   {
-    img: 'https://www.marya.ru/upload/iblock/ccc/ccc368634a9d38beab9c62839e526053/33a2a32e1c73ff55c5578462c823accc.jpg',
+    img: '/images/services/',
     title: 'Kostenlose Ausmessung',
     desc: 'Rufen Sie uns an unter +41 77 283 75 10 (kostenlos, rund um die Uhr) oder füllen Sie das Formular aus.',
   },
   {
-    img: 'https://www.marya.ru/upload/iblock/f02/f02ba2a0c44dc54d7ecc6892a3de1fea/5adeba87c905a860f048c5af20a9af4b.jpg',
+    img: '/images/services/',
     title: 'Faire Kreditraten ohne Aufpreis',
     desc: 'Sie möchten Ihre neue Küche nicht sofort bezahlen, sondern in monatlichen Raten? Wir bieten faire Konditionen – ganz ohne versteckte Kosten.',
   },
   {
-    img: 'https://www.marya.ru/upload/iblock/f7e/f7e0c3be15228450bf5b2df622fa8bef/e00ec2fc725710d2b1b6db9e7a35c6cb.jpg',
+    img: '/images/services/',
     title: 'Lieferung & Montage',
     desc: 'Vertrauen Sie die Endmontage und Installation Ihrer Küche unseren Profis an. Lieferung und Aufbau aus einer Hand.',
   },
   {
-    img: 'https://www.marya.ru/upload/iblock/964/964d72357855cbf95d7791a3806fe8dd/7ab354b30f4082d356b8d90a96bf6871.jpg',
+    img: '/images/services/',
     title: '20 Jahre Garantie',
     desc: 'Das Gestell ist die Basis jeder Küche – von seiner Qualität und Langlebigkeit hängt die Lebensdauer des gesamten Möbels ab. Wir garantieren beides.',
   },
   {
-    img: 'https://www.marya.ru/upload/iblock/2a8/2a817f35bd7fe4034647e546b9c8d213/691f72083fcd6f65b8950f7060c83381.jpg',
+    img: '/images/services/',
     title: 'Preisliste Serviceleistungen',
     desc: 'Hier finden Sie das vollständige Verzeichnis aller durchgeführten Arbeiten und die aktuellen Preise.',
   },

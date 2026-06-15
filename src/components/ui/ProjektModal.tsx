@@ -45,7 +45,7 @@ export default function ProjektModal({ open, onClose }: Props) {
           position: 'relative', height: 200, borderRadius: '1.2rem 1.2rem 0 0', overflow: 'hidden', flexShrink: 0,
         }}>
           <img
-            src="https://www.marya.ru/promo/home3/img/models/mix22.jpg"
+            src="/images/promo/models/mix22.jpg"
             alt=""
             style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
           />

@@ -2,12 +2,12 @@ import Link from 'next/link'
 import HoverSlider from '@/components/ui/HoverSlider'
 
 const products = [
-  { name: 'Küche Trento Email', slug: 'trento-email', tag: 'Klassisch', img: 'https://www.marya.ru/promo/home3/img/models/trento1.jpg' },
-  { name: 'Küche Mix 22',       slug: 'mix-22',       tag: 'Modern',    img: 'https://www.marya.ru/promo/home3/img/models/mix22.jpg' },
-  { name: 'Küche Avenue',       slug: 'avenue',       tag: 'Klassisch', img: 'https://www.marya.ru/promo/home3/img/models/avenue.jpg' },
-  { name: 'Küche Nicolle',      slug: 'nicolle-thermoplast', tag: 'Klassisch', img: 'https://www.marya.ru/promo/home3/img/models/nicolle.jpg' },
-  { name: 'Küche Jazz',         slug: 'jazz',         tag: 'Modern',    img: 'https://www.marya.ru/promo/home3/img/models/jazz.jpg' },
-  { name: 'Schrank Jazz',       slug: 'jazz-kabinet', tag: 'Schrank',   img: 'https://www.marya.ru/promo/home3/img/models/jazz3.jpg' },
+  { name: 'Küche Trento Email', slug: 'trento-email', tag: 'Klassisch', img: '/images/promo/models/trento1.jpg' },
+  { name: 'Küche Mix 22',       slug: 'mix-22',       tag: 'Modern',    img: '/images/promo/models/mix22.jpg' },
+  { name: 'Küche Avenue',       slug: 'avenue',       tag: 'Klassisch', img: '/images/promo/models/avenue.jpg' },
+  { name: 'Küche Nicolle',      slug: 'nicolle-thermoplast', tag: 'Klassisch', img: '/images/promo/models/nicolle.jpg' },
+  { name: 'Küche Jazz',         slug: 'jazz',         tag: 'Modern',    img: '/images/promo/models/jazz.jpg' },
+  { name: 'Schrank Jazz',       slug: 'jazz-kabinet', tag: 'Schrank',   img: '/images/promo/models/jazz3.jpg' },
 ]
 
 export default function PopularProducts() {

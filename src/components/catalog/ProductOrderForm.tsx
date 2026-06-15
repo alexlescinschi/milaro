@@ -41,7 +41,7 @@ export default function ProductOrderForm({ productName }: { productName: string 
   return (
     <section style={{
       position: 'relative', padding: '5rem 0', overflow: 'hidden',
-      backgroundImage: 'url(https://www.marya.ru/promo/home3/img/models/trento1.jpg)',
+      backgroundImage: 'url(/images/promo/models/trento1.jpg)',
       backgroundSize: 'cover', backgroundPosition: 'center',
     }}>
       {/* Dark overlay */}

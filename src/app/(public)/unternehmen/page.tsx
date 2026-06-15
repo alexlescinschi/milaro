@@ -15,21 +15,21 @@ const STATS = [
 ]
 
 const ADVANTAGES = [
-  { img: 'https://www.marya.ru/production/img/vantages/1.jpg', title: 'Garantie bis 20 Jahre',   text: 'Wir stehen hinter Qualität und Langlebigkeit unserer Möbel.',                                                               textFirst: false },
-  { img: 'https://www.marya.ru/production/img/vantages/2.jpg', title: '2000 Frontenvarianten',   text: 'Bei milaro.ch finden Sie die richtigen Materialien, Texturen und Farben.',                                                 textFirst: false },
-  { img: 'https://www.marya.ru/production/img/vantages/3.jpg', title: 'Europäische Beschläge',   text: 'Mechanismen öffnen und schliessen sanft und leise — garantiert für 80 000+ Zyklen.',                                       textFirst: false },
-  { img: 'https://www.marya.ru/production/img/vantages/4.jpg', title: 'Komplettlösungen',        text: 'Möbel für das ganze Zuhause in einem Stil und aus einer Hand.',                                                            textFirst: true  },
-  { img: 'https://www.marya.ru/production/img/vantages/5.jpg', title: 'Wir folgen den Trends',   text: 'Wir besuchen internationale Designmessen und bieten unseren Kunden die besten Ideen und Neuheiten.',                       textFirst: true  },
-  { img: 'https://www.marya.ru/production/img/workshops/2-4.jpg', title: 'Voller Produktionszyklus', text: 'Von der Planung bis zur Lieferung und Montage — alles aus eigener Fabrik.',                                            textFirst: true  },
+  { img: '/images/production/1.jpg', title: 'Garantie bis 20 Jahre',   text: 'Wir stehen hinter Qualität und Langlebigkeit unserer Möbel.',                                                               textFirst: false },
+  { img: '/images/production/2.jpg', title: '2000 Frontenvarianten',   text: 'Bei milaro.ch finden Sie die richtigen Materialien, Texturen und Farben.',                                                 textFirst: false },
+  { img: '/images/production/3.jpg', title: 'Europäische Beschläge',   text: 'Mechanismen öffnen und schliessen sanft und leise — garantiert für 80 000+ Zyklen.',                                       textFirst: false },
+  { img: '/images/production/4.jpg', title: 'Komplettlösungen',        text: 'Möbel für das ganze Zuhause in einem Stil und aus einer Hand.',                                                            textFirst: true  },
+  { img: '/images/production/5.jpg', title: 'Wir folgen den Trends',   text: 'Wir besuchen internationale Designmessen und bieten unseren Kunden die besten Ideen und Neuheiten.',                       textFirst: true  },
+  { img: '/images/production/2-4.jpg', title: 'Voller Produktionszyklus', text: 'Von der Planung bis zur Lieferung und Montage — alles aus eigener Fabrik.',                                            textFirst: true  },
 ]
 
 const SLIDER_IMGS = [
-  { src: 'https://www.marya.ru/production/img/tour/3.jpg',        alt: 'Produktion 1' },
-  { src: 'https://www.marya.ru/production/img/workshops/3-1.jpg', alt: 'Produktion 2' },
-  { src: 'https://www.marya.ru/production/img/workshops/3-4.jpg', alt: 'Produktion 3' },
-  { src: 'https://www.marya.ru/production/img/workshops/1.jpg',   alt: 'Produktion 4' },
-  { src: 'https://www.marya.ru/production/img/workshops/2-3.jpg', alt: 'Produktion 5' },
-  { src: 'https://www.marya.ru/production/img/tour/1.jpg',        alt: 'Produktion 6' },
+  { src: '/images/production/3.jpg',        alt: 'Produktion 1' },
+  { src: '/images/production/3-1.jpg', alt: 'Produktion 2' },
+  { src: '/images/production/3-4.jpg', alt: 'Produktion 3' },
+  { src: '/images/production/1.jpg',   alt: 'Produktion 4' },
+  { src: '/images/production/2-3.jpg', alt: 'Produktion 5' },
+  { src: '/images/production/1.jpg',        alt: 'Produktion 6' },
 ]
 
 const REVIEWS = [
@@ -165,7 +165,7 @@ export default function UnternehmenPage() {
             </div>
             <div style={{ borderRadius: '0.75rem', overflow: 'hidden', minHeight: '20rem', position: 'relative', background: '#f0f0f0' }}>
               <video
-                src="https://www.marya.ru/production/img/facades.mp4"
+                src="/videos/products/facades.mp4"
                 style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 autoPlay loop muted playsInline preload="metadata"
               />

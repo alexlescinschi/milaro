@@ -3,11 +3,11 @@
 import Link from 'next/link'
 
 const CATS = [
-  { name: 'Küchen', slug: 'kuechen', img: 'https://www.marya.ru/promo/home3/img/nav/kitchens1.jpg' },
-  { name: 'Schränke', slug: 'schraenke', img: 'https://www.marya.ru/promo/home3/img/nav/closets3.jpg' },
-  { name: 'Bäder', slug: 'baeder', img: 'https://www.marya.ru/promo/home3/img/nav/baths1.jpg' },
-  { name: 'Sofas', slug: 'sofas-betten', img: 'https://www.marya.ru/promo/home3/img/nav/sofas1.jpg' },
-  { name: 'Betten', slug: 'sofas-betten', img: 'https://www.marya.ru/promo/home3/img/nav/beds1.jpg' },
+  { name: 'Küchen', slug: 'kuechen', img: '/images/promo/nav/kitchens1.jpg' },
+  { name: 'Schränke', slug: 'schraenke', img: '/images/promo/nav/closets3.jpg' },
+  { name: 'Bäder', slug: 'baeder', img: '/images/promo/nav/baths1.jpg' },
+  { name: 'Sofas', slug: 'sofas-betten', img: '/images/promo/nav/sofas1.jpg' },
+  { name: 'Betten', slug: 'sofas-betten', img: '/images/promo/nav/beds1.jpg' },
 ]
 
 export default function HeroVideo() {
@@ -19,9 +19,9 @@ export default function HeroVideo() {
         loop
         muted
         playsInline
-        poster="https://www.marya.ru/promo/home3/img/nav/vantages.jpg"
+        poster="/images/promo/nav/vantages.jpg"
       >
-        <source src="https://www.marya.ru/upload/2026/closet6.mp4" type="video/mp4" />
+        <source src="/videos/hero/closet6.mp4" type="video/mp4" />
       </video>
       <div className="hero-overlay" />
 

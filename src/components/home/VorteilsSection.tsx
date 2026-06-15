@@ -94,7 +94,7 @@ export default function VorteilsSection() {
 
         {/* Background video — subtle behind the light overlay */}
         <video
-          src="https://www.marya.ru/upload/2026/closet6.mp4"
+          src="/videos/hero/closet6.mp4"
           autoPlay
           muted
           loop
@@ -158,7 +158,7 @@ export default function VorteilsSection() {
               }}
             >
               <img
-                src="https://www.marya.ru/promo/home3/img/nav/vantages.jpg"
+                src="/images/promo/nav/vantages.jpg"
                 alt="milaro Vorteile"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
