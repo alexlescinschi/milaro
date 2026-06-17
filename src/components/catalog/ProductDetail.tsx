@@ -54,7 +54,6 @@ const products: Record<string, Product> = {
       ] },
       { name: 'Staubgrau', color: '#a09990', images: [
         '/images/portfolio/7597d418a5cbf489ac7f863fc3682080.jpg',
-        '/images/portfolio/e0909937d0aa0fd3374ca3ca1df0cc83.jpg',
         '/images/portfolio/acd3708592d77d0d972a43ab6ad8c460.jpg',
         '/images/portfolio/a2a3fee42d6f23b9cd867a3205d9bee3.jpg',
         '/images/portfolio/1bb5c7e1dded0ea3a76e7c575204288c.jpg',
@@ -72,15 +71,10 @@ const products: Record<string, Product> = {
         '/images/portfolio/aacbffb0237d007f52689ae0fbbbb81c.jpg',
         '/images/portfolio/b1ad293c75e077ea9c06a6af511e18b1.jpg',
         '/images/portfolio/81f1372549c7a5139eab55ab09917887.jpg',
-        '/images/portfolio/1f876cbac22da1ca4cf40e5af38644a5.jpg',
-        '/images/portfolio/44c965e4b11847f36a7b53b85759f8b4.jpg',
         '/images/portfolio/dd3e3967057f9e3979ff0f58122ceaf6.jpg',
         '/images/portfolio/02a11532171837756a7ef8f70a1d0b6f.jpg',
-        '/images/portfolio/62cbb912b27899c808071081e15d895e.jpg',
         '/images/portfolio/f2da018bf24da7e9dcaebddf242401a6.jpg',
         '/images/portfolio/f0cd4059426e2cf3f2d5aff95574d5b2.jpg',
-        '/images/portfolio/c5168a177f305fe04a48a6bf9654e569.jpg',
-        '/images/portfolio/4a10b7270f43dbc186b57df93bfad4ac.jpg',
       ] },
     ],
     specs: [
@@ -244,7 +238,6 @@ const products: Record<string, Product> = {
     price: 'ab CHF 10',
     variants: [
       { name: 'Kaltweiss', color: '#f0f0ec', images: [
-        '/images/portfolio/774cc848e4395777e0bbe8097134685a.jpg',
         '/images/portfolio/3969eeed2cce84c478d771a9cdcb8628.jpg',
         '/images/portfolio/259a458b7e1bf6c1a813c3c827ed4e33.jpg',
         '/images/portfolio/57582b228dcc913b5a874633e7954760.jpg',
@@ -281,7 +274,6 @@ const products: Record<string, Product> = {
         '/images/portfolio/4bc062591bfe72edb58e12177510ff02.jpg',
         '/images/portfolio/8f3b260982050a34d4cd07b10adefd07.jpg',
         '/images/portfolio/fa495901f4262df326e0e15664b9703f.jpg',
-        '/images/portfolio/a2a27518fffa7d2e4c000c56978b6aec.jpg',
       ] },
     ],
     specs: [
@@ -339,19 +331,13 @@ const products: Record<string, Product> = {
       ] },
       { name: 'Schwarz', color: '#1a1a1a', images: [
         '/images/portfolio/7d40cbf53b48c8b595bb6b79f0dd469c.jpg',
-        '/images/portfolio/2a0944207f6f7b927b621dc0ea8a4fa6.jpg',
-        '/images/portfolio/cde84e0b95cfbc0323e75ecefdbf93fb.jpg',
       ] },
       { name: 'Dunkelgrün', color: '#3d5a3c', images: [
         '/images/portfolio/be43cbe63f572c6bc58d83ca29748817.jpg',
         '/images/portfolio/11a5cc59c3ac9f9ec8797aeb65d8198a.jpg',
         '/images/portfolio/eff1ec6fa23f9c5574b6f2a12ce41348.jpg',
-        '/images/portfolio/1ee1803d09e429b59c559bcec45f5e15.jpg',
-        '/images/portfolio/1d0dc21736a514666014e954479f06c5.jpg',
-        '/images/portfolio/78109d59b74cae2eb37b2b4d9f3bf07c.jpg',
       ] },
       { name: 'Navy', color: '#2c3e5a', images: [
-        '/images/portfolio/ea7ac98bc29e69d68b3b5025b906a038.jpg',
         '/images/portfolio/3773f04a268d1a56ee1a4ccd82704ce9.jpg',
         '/images/portfolio/2fee5ceb877271d8c5b2a643315706b9.jpg',
         '/images/portfolio/3812a603ae2e2e623e92bb7e7dec2dab.jpg',
@@ -360,7 +346,6 @@ const products: Record<string, Product> = {
       { name: 'Sand', color: '#d4c5a0', images: [
         '/images/portfolio/45d8be781e313f4d21761d23507ff183.jpg',
         '/images/portfolio/8d29ecc0d9efc1e507e91adec2c4a8d4.jpg',
-        '/images/portfolio/16af5acbf154bd8e5d6c4278d57f716d.jpg',
       ] },
     ],
     specs: [
@@ -420,7 +405,6 @@ const products: Record<string, Product> = {
       { name: 'Beige', color: '#dcc8a0', images: [
         '/images/portfolio/45d8be781e313f4d21761d23507ff183.jpg',
         '/images/portfolio/8d29ecc0d9efc1e507e91adec2c4a8d4.jpg',
-        '/images/portfolio/16af5acbf154bd8e5d6c4278d57f716d.jpg',
       ] },
     ],
     specs: [
