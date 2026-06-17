@@ -6,7 +6,7 @@ import ProjektModal from '@/components/ui/ProjektModal'
 import Link from 'next/link'
 import { PROJECTS } from '@/lib/portfolio'
 
-const heroImg = PROJECTS[0]?.images[0] ?? '/images/portfolio/uf/44a/44a04095f2ab2d1d8a0953f0f753dc8e/33113d889a5866784047f62eef021760.jpg'
+const heroImg = PROJECTS[0]?.images[0] ?? '/images/portfolio/33113d889a5866784047f62eef021760.jpg'
 
 const STEPS = [
   {
