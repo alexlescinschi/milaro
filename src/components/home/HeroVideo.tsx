@@ -26,7 +26,7 @@ export default function HeroVideo() {
       <div className="hero-overlay" />
 
       <div className="hero-content uk-container">
-        <h1 className="hero-headline">MILARO TEST 2026 — Sie sind zu Hause</h1>
+        <h1 className="hero-headline">MILARO  — Sie sind zu Hause</h1>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '0.8rem', flexWrap: 'wrap' }}>
           {CATS.map((cat) => (

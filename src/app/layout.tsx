@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import FloatingContact from '@/components/layout/FloatingContact'
 
 export const metadata: Metadata = {
   title: 'milaro.ch — Massgefertigte Küchen und Möbel in der Schweiz',
@@ -24,6 +25,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <FloatingContact />
       </body>
     </html>
   )

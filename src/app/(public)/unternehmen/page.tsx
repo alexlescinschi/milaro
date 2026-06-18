@@ -9,8 +9,8 @@ import { PROJECTS } from '@/lib/portfolio'
 /* ── data ─────────────────────────────────────────────────────────── */
 
 const STATS = [
-  { value: '667 637', label: 'Aufträge seit 1999' },
-  { value: '26 Jahre', label: 'Marktführer der Branche' },
+  { value: '2 500+', label: 'Aufträge seit 2015' },
+  { value: '10+ Jahre', label: 'Erfahrung in der Branche' },
   { value: '4,8 von 5', label: 'Kundenbewertung' },
 ]
 
@@ -75,7 +75,7 @@ function HeroSlider({ projects }: { projects: { images: string[]; title: string 
             Über milaro.ch
           </p>
           <h1 style={{ fontFamily: 'var(--sb-reg)', fontSize: 'clamp(2rem, 4vw, 3.2rem)', color: 'white', margin: 0, lineHeight: 1.15, maxWidth: 600 }}>
-            Möbel nach Mass —<br />seit 1999 für Sie
+            Möbel nach Mass —<br />seit 2015 für Sie
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.8)', marginTop: '1rem', maxWidth: 480, lineHeight: 1.7 }}>
             milaro.ch bringt die Qualität der Fabrik Maria direkt in Schweizer Wohnungen — ohne Umwege, mit persönlicher Beratung.
@@ -156,11 +156,11 @@ export default function UnternehmenPage() {
                 <p style={{ fontFamily: 'var(--sb-reg)', fontSize: '1rem', fontWeight: 700, color: 'var(--main-color)', breakInside: 'avoid', marginTop: 0 }}>
                   Unsere Mission — Möbel schaffen, die das Leben der Menschen komfortabler, gemütlicher und glücklicher machen.
                 </p>
-                <p>Wir planen, produzieren und liefern Möbel an zufriedene Kunden seit über 25 Jahren.</p>
-                <p>Küchen, Schränke, Badmöbel und Wohnzimmermöbel werden nach individuellen Projekten gefertigt — abgestimmt auf den Lebensstil und die Wünsche der Kunden.</p>
-                <p>Bei milaro.ch können Sie Möbel für das gesamte Zuhause bestellen — mit kostenloser Planung, 3D-Visualisierung und professioneller Montage.</p>
-                <p>Unsere Designer bieten Technik führender Marken, Accessoires, Mechanismen sowie Dekore für die individuelle Raumgestaltung.</p>
-                <p>Für Profis der Designbranche, Händler und B2B-Partner bietet milaro.ch spezielle Kooperationsbedingungen und umfassende Lösungen für Objekte jeder Grösse.</p>
+                <p>Seit über 10 Jahren planen, produzieren und liefern wir Möbel an zufriedene Kunden — über 2 500 erfolgreiche Projekte.</p>
+                <p>Küchen, Schränke, Badmöbel und Wohnzimmermöbel werden nach individuellen Projekten gefertigt — abgestimmt auf den Lebensstil und die Wünsche jedes Kunden. Jedes Möbelstück ist ein Unikat.</p>
+                <p>Wir setzen auf höchste Qualität: Europäische Beschläge, geprüfte Materialien und präzise Verarbeitung aus eigener Fabrik. Das Ergebnis sind Möbel, die ein Leben lang halten.</p>
+                <p>Ob kleine Küche oder Premium-Ausbau mit Manufaktur-Komponenten — wir arbeiten mit jedem Budget. Vom Einstiegsmodell bis zur handgefertigten Designlösung finden Sie bei uns die passende Option.</p>
+                <p>Bei milaro.ch erhalten Sie alles aus einer Hand: kostenlose Planung, 3D-Visualisierung, Produktion, Lieferung und professionelle Montage durch unser eigenes Team.</p>
               </div>
             </div>
             <div style={{ borderRadius: '0.75rem', overflow: 'hidden', minHeight: '20rem', position: 'relative', background: '#f0f0f0' }}>
@@ -211,6 +211,40 @@ export default function UnternehmenPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* ── Team & Vertrauen ──────────────────────────────────────── */}
+      <section style={{ marginBottom: '5rem' }}>
+        <div className="uk-container">
+          <SectionHeading>Unser Team — Qualität aus Leidenschaft</SectionHeading>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem', marginBottom: '2.5rem' }}>
+            {['1.jpg','2.jpg','3.jpeg','4.jpg','5.jpg','6.jpg'].map((f, i) => (
+              <div key={i} style={{ borderRadius: '0.5rem', overflow: 'hidden', aspectRatio: '4/3' }}>
+                <img src={`/images/zusammenarbeit/team/${f}`} alt={`Team ${i + 1}`} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              </div>
+            ))}
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '2rem', textAlign: 'center' }}>
+            <div>
+              <p style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem' }}>Qualität die überzeugt</p>
+              <p style={{ color: 'var(--muted-color)', fontSize: '0.85rem', lineHeight: 1.7, margin: 0 }}>
+                Hochwertige Materialien, präzise Verarbeitung und strenge Qualitätskontrollen — dafür steht milaro.ch.
+              </p>
+            </div>
+            <div>
+              <p style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem' }}>Individuelles Design</p>
+              <p style={{ color: 'var(--muted-color)', fontSize: '0.85rem', lineHeight: 1.7, margin: 0 }}>
+                Jedes Projekt wird speziell für Sie entworfen — abgestimmt auf Ihre Wünsche, Ihren Raum und Ihren Lebensstil.
+              </p>
+            </div>
+            <div>
+              <p style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem' }}>Jedes Budget willkommen</p>
+              <p style={{ color: 'var(--muted-color)', fontSize: '0.85rem', lineHeight: 1.7, margin: 0 }}>
+                Von der budgetfreundlichen Küche bis zur Premium-Manufaktur-Lösung — wir realisieren Ihr Projekt in jeder Preisklasse.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

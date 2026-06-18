@@ -36,45 +36,45 @@ const products: Record<string, Product> = {
     desc: 'Mix 22 ist ein vielseitiges Möbelkonzept. Lackierte und furnierte Fronten lassen sich frei kombinieren — für einen ausdrucksstarken Look mit Charakter. Vielfältige Farben von dezent bis markant.',
     price: 'ab CHF 11',
     variants: [
-      { name: 'Weiss Premium', color: '#f5f5f0', images: ['/images/portfolio/7597d418a5cbf489ac7f863fc3682080.jpg'] },
-      { name: 'Lehmgrau', color: '#b8b0a5', images: ['/images/portfolio/7597d418a5cbf489ac7f863fc3682080.jpg'] },
-      { name: 'Diamant Grau', color: '#9e9e9e', images: ['/images/portfolio/7597d418a5cbf489ac7f863fc3682080.jpg'] },
       { name: 'Gelber Sand', color: '#d4c5a0', images: [
-        '/images/portfolio/7597d418a5cbf489ac7f863fc3682080.jpg',
+        '/images/portfolio/1c736d98b62f694f8227ff4348dc5618.jpg',
         '/images/portfolio/7b89b06eaece34af91fc32a7cf4ce7da.jpg',
         '/images/portfolio/ac72773fd5a85c35b7fb482766412d88.jpg',
       ] },
-      { name: 'Salbeigrün', color: '#9caf88', images: ['/images/portfolio/7597d418a5cbf489ac7f863fc3682080.jpg'] },
-      { name: 'Kaschmir', color: '#d4c4b7', images: [
-        '/images/portfolio/7597d418a5cbf489ac7f863fc3682080.jpg',
-        '/images/portfolio/22d0dec884b29828847f9cdda881f2b2.jpg',
-        '/images/portfolio/c86c4974fda28903d0f4eedd1fd4dfa2.jpg',
-        '/images/portfolio/65594a58a76db96c31117693c5c5333a.jpg',
-        '/images/portfolio/ee03a51256566aff705526ca46d4204f.jpg',
-      ] },
-      { name: 'Staubgrau', color: '#a09990', images: [
-        '/images/portfolio/7597d418a5cbf489ac7f863fc3682080.jpg',
-        '/images/portfolio/acd3708592d77d0d972a43ab6ad8c460.jpg',
-        '/images/portfolio/a2a3fee42d6f23b9cd867a3205d9bee3.jpg',
-        '/images/portfolio/1bb5c7e1dded0ea3a76e7c575204288c.jpg',
-      ] },
-      { name: 'Baltik Blau', color: '#5b7c99', images: ['/images/portfolio/7597d418a5cbf489ac7f863fc3682080.jpg'] },
-      { name: 'Beton Chicago', color: '#6b6b6b', images: ['/images/portfolio/0c0f5a5b661d20b33803f06e68633750.jpg'] },
-      { name: 'Eiche Natur', color: '#b8956e', images: ['/images/portfolio/5c04b838fb6bfd94fc8453ac9c7f1b26.jpg'] },
-      { name: 'Eiche Aragon', color: '#8c6e4a', images: ['/images/portfolio/57a5c9fd1c2ced19fb8232b769e43d88.jpg'] },
-      { name: 'Eiche Vicenza Grau', color: '#9e8e80', images: ['/images/portfolio/8f287e3808cc9da4db40dc2b412cbb65.jpg'] },
-      { name: 'Eiche Charleston dunkelbraun', color: '#3d2b1f', images: [
-        '/images/portfolio/e74662c8efb1dc8f4a97b60fdf02ac16.jpg',
+      { name: 'Eiche Charleston', color: '#3d2b1f', images: [
         '/images/portfolio/183013f45e504e799f868ebcbf3930a9.jpg',
+        '/images/portfolio/3e5b4133c64cc2252413248abb66cefe.jpg',
         '/images/portfolio/e066cf1192dcc3901ba54d60bf4d813a.jpg',
         '/images/portfolio/9c4df4c58bdaf68d086cf09545dc50c5.jpg',
         '/images/portfolio/aacbffb0237d007f52689ae0fbbbb81c.jpg',
         '/images/portfolio/b1ad293c75e077ea9c06a6af511e18b1.jpg',
         '/images/portfolio/81f1372549c7a5139eab55ab09917887.jpg',
+        '/images/portfolio/1f876cbac22da1ca4cf40e5af38644a5.jpg',
+        '/images/portfolio/44c965e4b11847f36a7b53b85759f8b4.jpg',
         '/images/portfolio/dd3e3967057f9e3979ff0f58122ceaf6.jpg',
         '/images/portfolio/02a11532171837756a7ef8f70a1d0b6f.jpg',
+        '/images/portfolio/62cbb912b27899c808071081e15d895e.jpg',
         '/images/portfolio/f2da018bf24da7e9dcaebddf242401a6.jpg',
         '/images/portfolio/f0cd4059426e2cf3f2d5aff95574d5b2.jpg',
+        '/images/portfolio/c5168a177f305fe04a48a6bf9654e569.jpg',
+        '/images/portfolio/4a10b7270f43dbc186b57df93bfad4ac.jpg',
+      ] },
+      { name: 'Kaschmir', color: '#d4c4b7', images: [
+        '/images/portfolio/22d0dec884b29828847f9cdda881f2b2.jpg',
+        '/images/portfolio/c86c4974fda28903d0f4eedd1fd4dfa2.jpg',
+        '/images/portfolio/65594a58a76db96c31117693c5c5333a.jpg',
+        '/images/portfolio/ee03a51256566aff705526ca46d4204f.jpg',
+      ] },
+      { name: 'Rotbraun', color: '#7a4030', images: [
+        '/images/portfolio/ea0433a6dfe41075dbca9ec15f8a42d8.jpg',
+        '/images/portfolio/2782d6bb1735d63c979c64548ec1322e.jpg',
+        '/images/portfolio/1147924a0f617a2a543b3f9a28e2d901.jpg',
+      ] },
+      { name: 'Staubgrau', color: '#a09990', images: [
+        '/images/portfolio/e0909937d0aa0fd3374ca3ca1df0cc83.jpg',
+        '/images/portfolio/acd3708592d77d0d972a43ab6ad8c460.jpg',
+        '/images/portfolio/a2a3fee42d6f23b9cd867a3205d9bee3.jpg',
+        '/images/portfolio/1bb5c7e1dded0ea3a76e7c575204288c.jpg',
       ] },
     ],
     specs: [
@@ -321,7 +321,7 @@ const products: Record<string, Product> = {
         '/images/portfolio/9f706c1f18bbff9e2db198992dec3fdf.jpg',
         '/images/portfolio/ff2758d04d24d6ccfbd270f616a44ce4.jpg',
       ] },
-      { name: 'Grau Glanz', color: '#9e9e9e', images: [
+      { name: 'Hellgrau Ultra Matt', color: '#9e9e9e', images: [
         '/images/portfolio/957902645e29383dd443b08eb1003514.jpg',
         '/images/portfolio/9c9ccc42e8ef3090d5487ab19a787f9f.jpg',
         '/images/portfolio/7d351c5766222ffdf67ce56d8dbac2b1.jpg',
@@ -329,23 +329,30 @@ const products: Record<string, Product> = {
         '/images/portfolio/38f11719b76918aba675c86d454a45c3.jpg',
         '/images/portfolio/37bdee255b0cd1ef9acf07b31883cbc9.jpg',
       ] },
-      { name: 'Schwarz', color: '#1a1a1a', images: [
-        '/images/portfolio/7d40cbf53b48c8b595bb6b79f0dd469c.jpg',
+      { name: 'Perlweiss Glanz', color: '#e8e0d8', images: [
+        '/images/portfolio/45d8be781e313f4d21761d23507ff183.jpg',
+        '/images/portfolio/8d29ecc0d9efc1e507e91adec2c4a8d4.jpg',
+        '/images/portfolio/16af5acbf154bd8e5d6c4278d57f716d.jpg',
       ] },
-      { name: 'Dunkelgrün', color: '#3d5a3c', images: [
+      { name: 'Perlrosa Glanz', color: '#e8b8b0', images: [
         '/images/portfolio/be43cbe63f572c6bc58d83ca29748817.jpg',
         '/images/portfolio/11a5cc59c3ac9f9ec8797aeb65d8198a.jpg',
         '/images/portfolio/eff1ec6fa23f9c5574b6f2a12ce41348.jpg',
+        '/images/portfolio/1ee1803d09e429b59c559bcec45f5e15.jpg',
+        '/images/portfolio/1d0dc21736a514666014e954479f06c5.jpg',
+        '/images/portfolio/78109d59b74cae2eb37b2b4d9f3bf07c.jpg',
       ] },
-      { name: 'Navy', color: '#2c3e5a', images: [
+      { name: 'Blau Porzellan Glanz', color: '#8ab0c8', images: [
+        '/images/portfolio/ea7ac98bc29e69d68b3b5025b906a038.jpg',
         '/images/portfolio/3773f04a268d1a56ee1a4ccd82704ce9.jpg',
         '/images/portfolio/2fee5ceb877271d8c5b2a643315706b9.jpg',
         '/images/portfolio/3812a603ae2e2e623e92bb7e7dec2dab.jpg',
         '/images/portfolio/1d39c91c30b2da0b377ea81ff2b954cb.jpg',
       ] },
-      { name: 'Sand', color: '#d4c5a0', images: [
-        '/images/portfolio/45d8be781e313f4d21761d23507ff183.jpg',
-        '/images/portfolio/8d29ecc0d9efc1e507e91adec2c4a8d4.jpg',
+      { name: 'Matt Gold', color: '#c8a850', images: [
+        '/images/portfolio/7d40cbf53b48c8b595bb6b79f0dd469c.jpg',
+        '/images/portfolio/2a0944207f6f7b927b621dc0ea8a4fa6.jpg',
+        '/images/portfolio/cde84e0b95cfbc0323e75ecefdbf93fb.jpg',
       ] },
     ],
     specs: [
@@ -519,9 +526,11 @@ const products: Record<string, Product> = {
     desc: 'Die Küche Vector verkörpert den Grossstadtstil mit minimalistischer Eleganz. Markante geometrische Formen, offene Sektionen und V-förmige Griffe schaffen eine asketische, aber selbstbewusste Ästhetik. Qualität trifft auf urbanes Design.',
     price: 'ab CHF 12',
     variants: [
-      { name: 'Beige Schiefer', color: '#c8b89a', images: ['/images/portfolio/c51d3477904f8f44dc7bc410e9bf7e49.jpg'] },
-      { name: 'Graphit Schiefer', color: '#4a4a4a', images: ['/images/promo/models/jazz.jpg', '/images/portfolio/20c327c1d0e9f6cf64f49172ac9c0a5f.jpg'] },
-      { name: 'Weiss Matt', color: '#f0f0ec', images: ['/images/promo/models/avenue.jpg', '/images/portfolio/20c327c1d0e9f6cf64f49172ac9c0a5f.jpg'] },
+      { name: 'Beige Schiefer', color: '#c8b89a', images: [
+        '/images/portfolio/4d6c6784b17e3bafbadd7530f1704127.jpg',
+        '/images/portfolio/375ebe2fac66ae94848acbce25dd42f6.jpg',
+        '/images/portfolio/25dbb2c9d513f4858a6c1f247e722860.jpg',
+      ] },
     ],
     specs: [
       { label: 'Material', value: 'HPL-Kunststoff' },
@@ -622,41 +631,18 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/2a3593ed1f8cee397a78d4a9c01abffd.jpg', icon: '◈', title: 'Ökologische Materialien', text: 'Naturholz, sicher für die ganze Familie — Fronten aus zertifiziertem Furnier, schadstoffarm und nach internationalen Standards geprüft.' },
     ],
   },
-  'spark': {
-    name: 'Spark',
-    desc: 'Die atemberaubende Schönheit von Stein und Natur hat die Küche Spark inspiriert. Fronten mit Oberflächen, die Stein und Putz in verschiedenen Tönen imitieren, und natürliche Erdtöne setzen aktuelle Designtrends im Kücheninterieur.',
-    price: 'ab CHF 14',
-    variants: [
-      { name: 'Basalt Düne', color: '#7a7470', images: ['/images/portfolio/73f59625796e5b93fc897dbbfdfc55f7.jpg'] },
-      { name: 'Sahara Düne', color: '#c8b090', images: ['/images/promo/models/nicolle.jpg', '/images/promo/models/jazz3.jpg'] },
-      { name: 'Weisser Kalkstein', color: '#e8e4dc', images: ['/images/promo/models/avenue.jpg', '/images/promo/models/jazz3.jpg'] },
-      { name: 'Anthrazit Rhombus', color: '#383838', images: ['/images/promo/models/mix22.jpg', '/images/promo/models/jazz3.jpg'] },
-      { name: 'Travertin Bronze', color: '#b09070', images: ['/images/promo/models/trento1.jpg', '/images/promo/models/jazz3.jpg'] },
-    ],
-    specs: [
-      { label: 'Material', value: 'TSS-Kunststoff 0,8 mm' },
-      { label: 'Dekore', value: 'Über 22 Varianten' },
-      { label: 'Garantie', value: 'Bis zu 20 Jahre' },
-      { label: 'Technologie', value: 'Cleaf Scan-Print' },
-    ],
-    tagline: 'Philosophie der Natur',
-    featureImg: '/images/portfolio/464acb62d72e9c0e1b54ae0479e7efdf.jpg',
-    features: [
-      { img: '/images/portfolio/464acb62d72e9c0e1b54ae0479e7efdf.jpg', icon: '◇', title: 'Wie natürliches Massivholz', text: 'Cleaf-Technologie: perfekte Übereinstimmung von Oberflächenmuster und Porenstruktur der Front — täuschend echter Naturstein-Look.' },
-      { img: '/images/portfolio/73f59625796e5b93fc897dbbfdfc55f7.jpg', icon: '▦', title: 'Hart wie eine Arbeitsplatte', text: 'TSS-Kunststoff bis 0,8 mm Stärke — Splittersicherheit auf dem Niveau einer massiven Küchenarbeitsplatte.' },
-      { img: '/images/portfolio/1751dd35d70b56b96b9b6ebb86764207.jpg', icon: '▯', title: 'Naturalistische Dekore', text: 'Scan-Technologie reproduziert Texturen von Holz, Stoff, Beton und Stuck — mit einer Präzision, die echte Natur nachahmt.' },
-      { img: '/images/portfolio/7b3212e380209d71573c05d67e9547ed.jpg', icon: '◈', title: 'Monolithische Optik', text: 'Einheitliches Design von Front und Kante erzeugt den Effekt einer durchgehenden, massiven Oberfläche — keine sichtbaren Übergänge.' },
-    ],
-  },
   'antro-stone': {
     name: 'Antro Stone',
     desc: 'Raffinierte Brutalität — so lässt sich Antro Stone treffend beschreiben. Ihr Name bedeutet auf Italienisch "Höhle". Im Loft-Stil gehalten, kommen bei den Fronten echte Schieferfurniere aus Indien zum Einsatz — jede Küche ein absolutes Unikat.',
     price: 'ab CHF 18',
     variants: [
-      { name: 'Schwarz Schiefer', color: '#2a2a2a', images: ['/images/portfolio/73f59625796e5b93fc897dbbfdfc55f7.jpg'] },
-      { name: 'Vulkanisch', color: '#4a3a30', images: ['/images/promo/models/jazz.jpg', '/images/portfolio/cec6735ae5726b0d0e9aeb796617d53c.jpg'] },
-      { name: 'Meerblau', color: '#5a7080', images: ['/images/promo/models/trento1.jpg', '/images/portfolio/d009b242f5fc35f0b1bfdd0e46e35a24.jpg'] },
-      { name: 'Goldstein', color: '#a08050', images: ['/images/promo/models/mix22.jpg', '/images/portfolio/350d1971c126dfdf2e314bac647f572d.jpg'] },
+      { name: 'Schwarz Schiefer', color: '#2a2a2a', images: [
+        '/images/portfolio/79098b697b42e6831af626abb665935b.jpg',
+        '/images/portfolio/8bab6d0250c5603df2c6e72bbd09c887.jpg',
+        '/images/portfolio/5d5000814ce431a30c35f0306128b63e.jpg',
+        '/images/portfolio/e8097a2089e2e4a9421766b83da08807.jpg',
+        '/images/portfolio/6d6cde067ab07dd9d11e6a6ce2e0110b.jpg',
+      ] },
     ],
     specs: [
       { label: 'Material', value: 'Naturschiefer-Furnier' },
@@ -694,9 +680,6 @@ const products: Record<string, Product> = {
         '/images/portfolio/3c2abe1d6470fa1c2e645c2044c39f35.jpg',
         '/images/portfolio/cf7616cbc7875401fe01d17044a82efd.jpg',
       ] },
-      { name: 'Eukalyptus', color: '#7a8c6e', images: ['/images/portfolio/89de0ddf7b5b034ac8385a01405d5be4.jpg'] },
-      { name: 'Amerikanischer Nussbaum', color: '#6e4e30', images: ['/images/portfolio/89de0ddf7b5b034ac8385a01405d5be4.jpg'] },
-      { name: 'Teak', color: '#9a7050', images: ['/images/portfolio/89de0ddf7b5b034ac8385a01405d5be4.jpg'] },
     ],
     specs: [
       { label: 'Material', value: 'Naturholz-Furnier AA' },
@@ -718,9 +701,19 @@ const products: Record<string, Product> = {
     desc: 'Die Outdoor-Küche Milaro Garden ist ein echter Frischluft-Genuss! Speziell für den Ausseneinsatz konzipiert, lädt sie zu einem neuen Blick auf das Schweizer Landleben ein. Das modulare System ermöglicht eine stilvolle, funktionale Vollküche — überall.',
     price: 'ab CHF 20',
     variants: [
-      { name: 'Irische Eiche', color: '#8c6e4a', images: ['/images/portfolio/e28a63066b353a01fd5198e0401e27c1.jpg'] },
-      { name: 'Anthrazit', color: '#3a3a3a', images: ['/images/promo/models/jazz.jpg', '/images/promo/models/trento1.jpg'] },
-      { name: 'Weiss', color: '#f0f0ec', images: ['/images/promo/models/avenue.jpg', '/images/promo/models/trento1.jpg'] },
+      { name: 'Irische Eiche', color: '#8c6e4a', images: [
+        '/images/portfolio/dcd8e438154a09bf051818beab3324c7.jpg',
+        '/images/portfolio/76b6ebe004f7543fe05a48e9ec1fca25.jpg',
+        '/images/portfolio/aa4430af56c15196b7112388987007a2.jpg',
+        '/images/portfolio/0c393b0dd0836fd86c9dfb693e5846a3.jpg',
+        '/images/portfolio/581647e9f39cc11c1b6ed217e590263c.jpg',
+        '/images/portfolio/b43452c492176a3ea329e8b9c78ff2de.jpg',
+        '/images/portfolio/4f402b824210caabaeab5fffa57c1221.jpg',
+        '/images/portfolio/0129c57fc5821fbd37cef36c3bf938fa.jpg',
+        '/images/portfolio/db0cefcfcaa3184e49e1cedaa4eb2163.jpg',
+        '/images/portfolio/d967b468545cd29071fc6e4f53c1ab99.jpg',
+        '/images/portfolio/4000a42f224b6e6e61f26836fa9a6b1c.jpg',
+      ] },
     ],
     specs: [
       { label: 'Einsatzbereich', value: 'Innen + Aussen' },
@@ -742,11 +735,13 @@ const products: Record<string, Product> = {
     desc: 'Vector Touch schenkt totales Eintauchen in Gemütlichkeit und das Gefühl von Leichtigkeit. Die weiche, samtige Oberfläche in gedämpften Farbtönen realisiert ein zurückhaltendes und aktuelles minimalistisches Interieur — zeitgemäss und wohnlich.',
     price: 'ab CHF 13',
     variants: [
-      { name: 'Tongrau Supermat', color: '#a89888', images: ['/images/portfolio/c51d3477904f8f44dc7bc410e9bf7e49.jpg'] },
-      { name: 'Kaschmir Supermat', color: '#d4c4b7', images: ['/images/promo/models/nicolle.jpg', '/images/portfolio/20c327c1d0e9f6cf64f49172ac9c0a5f.jpg'] },
-      { name: 'Rosenquarz Supermat', color: '#ddbcb0', images: ['/images/promo/models/trento1.jpg', '/images/portfolio/20c327c1d0e9f6cf64f49172ac9c0a5f.jpg'] },
-      { name: 'Schwarzgraphit Supermat', color: '#282828', images: ['/images/promo/models/jazz.jpg', '/images/portfolio/20c327c1d0e9f6cf64f49172ac9c0a5f.jpg'] },
-      { name: 'Staubgrau Supermat', color: '#9a9090', images: ['/images/promo/models/mix22.jpg', '/images/portfolio/20c327c1d0e9f6cf64f49172ac9c0a5f.jpg'] },
+      { name: 'Kaschmir Supermat', color: '#d4c4b7', images: [
+        '/images/portfolio/ad7cb35eb0c5e2758ea72a5fbdc90622.jpg',
+        '/images/portfolio/f66e59ddc921391eb74bb9e2e29db1a7.jpg',
+        '/images/portfolio/449496390bcc255dc9a3dbf6ff9d955c.jpg',
+        '/images/portfolio/f7922a53629cc62c386441dcc52d21d4.jpg',
+        '/images/portfolio/4f0ddcd36ef1dee2d28fef62b0298ebe.jpg',
+      ] },
     ],
     specs: [
       { label: 'Material', value: 'PET-Supermat-Kunststoff' },
@@ -793,9 +788,12 @@ const products: Record<string, Product> = {
     desc: 'Wood Décor Email verbindet echte Holzdekore mit strapazierfähiger Emaillebeschichtung — ein einzigartiger Materialmix, der die Wärme des Holzes mit der Langlebigkeit des Emails vereint. Jede Front erzählt von Handwerk und natürlicher Schönheit.',
     price: 'ab CHF 16',
     variants: [
-      { name: 'Eiche Natur Matt', color: '#c8a878', images: ['/images/portfolio/0101f240452d9c172fb690cf5dc2f0da.jpg'] },
-      { name: 'Wenge Dunkel', color: '#4a3520', images: ['/images/portfolio/770e31cca96624575dd7900903ed4bed.jpg'] },
-      { name: 'Ahorn Weiss Email', color: '#e8e0d8', images: ['/images/portfolio/2d4f8caf5163ad7f473c3875fbfd1a6f.jpg'] },
+      { name: 'Eiche Natur Matt', color: '#c8a878', images: [
+        '/images/portfolio/9160b6cce5996b30c21c0ee66d9b6ed1.jpg',
+        '/images/portfolio/65c52c56114150980c1a65246a9b0a81.jpg',
+        '/images/portfolio/52b07953411fc3fed5f8cfb1476fa11d.jpg',
+        '/images/portfolio/79331d9e3a19189cb637a3193ee4ec29.jpg',
+      ] },
     ],
     specs: [
       { label: 'Frontmaterial', value: 'MDF + Holzdekor + Emaille' },
@@ -817,9 +815,16 @@ const products: Record<string, Product> = {
     desc: 'Tokyo Glanz steht für klaren Minimalismus mit Hochglanz-Akzenten. Die spiegelnden Fronten bringen viel Licht in den Raum und schaffen eine moderne, grosszügig wirkende Küche — zeitlos und pflegeleicht zugleich.',
     price: 'ab CHF 9',
     variants: [
-      { name: 'Weiss Hochglanz', color: '#f0f0ee', images: ['/images/portfolio/b53eac58ea68c013c3700ebe3b73e2ce.jpg'] },
-      { name: 'Grau Hochglanz', color: '#a0a0a0', images: ['/images/portfolio/78e7482b94a2107ea5db1e1f0ec879ea.jpg'] },
-      { name: 'Champagner Hochglanz', color: '#d8c8a0', images: ['/images/portfolio/accafd6a4fa0ddc1cd75e2db0c16e079.jpg'] },
+      { name: 'Hellgrau', color: '#c0c0c0', images: [
+        '/images/portfolio/82128da6551c91c84cbb51e5d417a8dd.jpg',
+        '/images/portfolio/fa8bbe86059d3b77beef41e70fb2dc10.jpg',
+      ] },
+      { name: 'Weiss', color: '#f0f0ee', images: [
+        '/images/portfolio/b53eac58ea68c013c3700ebe3b73e2ce.jpg',
+        '/images/portfolio/35408d9a5223b11dfc452846b8e10eda.jpg',
+        '/images/portfolio/159df34b49f832891dac5ca8670fe49c.jpg',
+        '/images/portfolio/3f09d4c4985ab3d4e2d63bc72b008c7f.jpg',
+      ] },
     ],
     specs: [
       { label: 'Material', value: 'MDF + PVC Hochglanz' },

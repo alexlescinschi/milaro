@@ -17,7 +17,7 @@ export async function POST(req: Request) {
 
     if (process.env.SMTP_HOST) {
       const { sendEmail } = await import('@/lib/email')
-      await sendEmail({ to: 'info@milaro.ch', subject: 'Neue Beratungsanfrage', html })
+      await sendEmail({ to: 'kunde@milaro.ch', subject: 'Neue Beratungsanfrage', html })
     } else {
       console.log('Inquiry email would be sent:', { name, phone, city })
     }

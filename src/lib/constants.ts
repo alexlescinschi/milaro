@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
   name: 'milaro.ch',
-  phone: '+41 77 283 75 10',
-  email: 'info@milaro.ch',
+  phone: '+41 77 275 44 00',
+  email: 'kunde@milaro.ch',
   hours: 'Mo–Fr 09:00–18:00, Sa 10:00–16:00',
 }
 

@@ -73,32 +73,32 @@ const GUARANTEES = [
 
 const ALL_SERVICES = [
   {
-    img: '/images/services/',
+    img: '/images/services/691f72083fcd6f65b8950f7060c83381.jpg',
     title: 'Kostenloser Design-Entwurf',
     desc: 'Professionelle Designer entwickeln für Sie einen individuellen Design-Entwurf – genau auf Ihre Wünsche abgestimmt.',
   },
   {
-    img: '/images/services/',
+    img: '/images/services/107acddfe87a56d49d8c2481152f4220.jpg',
     title: 'Kostenlose Ausmessung',
-    desc: 'Rufen Sie uns an unter +41 77 283 75 10 (kostenlos, rund um die Uhr) oder füllen Sie das Formular aus.',
+    desc: 'Rufen Sie uns an unter +41 77 275 44 00 (kostenlos, rund um die Uhr) oder füllen Sie das Formular aus.',
   },
   {
-    img: '/images/services/',
+    img: '/images/services/7ab354b30f4082d356b8d90a96bf6871.jpg',
     title: 'Faire Kreditraten ohne Aufpreis',
     desc: 'Sie möchten Ihre neue Küche nicht sofort bezahlen, sondern in monatlichen Raten? Wir bieten faire Konditionen – ganz ohne versteckte Kosten.',
   },
   {
-    img: '/images/services/',
+    img: '/images/services/5adeba87c905a860f048c5af20a9af4b.jpg',
     title: 'Lieferung & Montage',
     desc: 'Vertrauen Sie die Endmontage und Installation Ihrer Küche unseren Profis an. Lieferung und Aufbau aus einer Hand.',
   },
   {
-    img: '/images/services/',
+    img: '/images/services/33a2a32e1c73ff55c5578462c823accc.jpg',
     title: '20 Jahre Garantie',
     desc: 'Das Gestell ist die Basis jeder Küche – von seiner Qualität und Langlebigkeit hängt die Lebensdauer des gesamten Möbels ab. Wir garantieren beides.',
   },
   {
-    img: '/images/services/',
+    img: '/images/services/691f72083fcd6f65b8950f7060c83381.jpg',
     title: 'Preisliste Serviceleistungen',
     desc: 'Hier finden Sie das vollständige Verzeichnis aller durchgeführten Arbeiten und die aktuellen Preise.',
   },

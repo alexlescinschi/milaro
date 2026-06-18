@@ -16,7 +16,12 @@ export async function POST(req: Request) {
       <p><strong>Nachricht:</strong><br>${message}</p>
     `
 
-    console.log('Contact email would be sent:', { name, email, phone, message })
+    if (process.env.SMTP_HOST) {
+      const { sendEmail } = await import('@/lib/email')
+      await sendEmail({ to: 'kunde@milaro.ch', subject: 'Neue Kontaktanfrage', html })
+    } else {
+      console.log('Contact email would be sent:', { name, email, phone, message })
+    }
 
     return NextResponse.json({ success: true })
   } catch {
