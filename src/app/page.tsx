@@ -6,6 +6,7 @@ import KuehnenShowcase from '@/components/home/KuehnenShowcase'
 import MaterialsSection from '@/components/home/MaterialsSection'
 import FaqSection from '@/components/home/FaqSection'
 import PortfolioPreview from '@/components/home/PortfolioPreview'
+import ProductionSlider from '@/components/home/ProductionSlider'
 import BenefitsSection from '@/components/home/BenefitsSection'
 import ProcessSection from '@/components/home/ProcessSection'
 
@@ -22,6 +23,7 @@ export default function Home() {
       <MaterialsSection />
       <FaqSection />
       <PortfolioPreview />
+      <ProductionSlider />
       <BenefitsSection />
       <ProcessSection />
       <section className="uk-section" style={{ background: '#f7f6f4' }}>
