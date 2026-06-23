@@ -1086,13 +1086,16 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/a09ca380e3448d02096f5191f5235335.jpg', icon: '◈', title: 'Leises Gleitsystem', text: 'Hochwertige Aluminiumschienen für sanftes, geräuschloses Öffnen und Schliessen.' },
     ],
   },
+  // ponytail: images direct, no variants
   'mix-cabinet': {
     name: 'Mix 22 Schrank',
     desc: 'Mix 22 Schrank bringt die beliebte Mix-Kollektion ins Schlafzimmer. Kombinierbare Fronten aus verschiedenen Materialien, robuste Konstruktion und eine durchdachte Innenaufteilung.',
     price: 'ab CHF 10',
-    variants: [
-      { name: 'Weiss / Eiche', color: '#d8c89a', images: ['/images/portfolio/b5c0e8a955b0cf788391352a767dfc91.jpg'] },
-      { name: 'Graphit / Weiss', color: '#686870', images: ['/images/portfolio/a1a59b3be33593775e8a08faa94073b4.jpg'] },
+    images: [
+      '/images/schraenke/mix-cabinet/01.jpg',
+      '/images/schraenke/mix-cabinet/02.jpg',
+      '/images/schraenke/mix-cabinet/03.jpg',
+      '/images/schraenke/mix-cabinet/04.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -1109,13 +1112,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/a1a59b3be33593775e8a08faa94073b4.jpg', icon: '◈', title: 'Massgefertigt', text: 'Jede Einheit wird auf Ihren Raum zugeschnitten — in Breite, Höhe und Tiefe.' },
     ],
   },
+  // ponytail: images direct, no variants
   'vector-cabinet': {
     name: 'Vector Schrank',
     desc: 'Vector Schrank steht für technische Präzision und modernes Design. Klare Horizontallinien, filigrane Griffleisten und hochwertige Lacke machen ihn zum Blickfang in jedem Schlafzimmer.',
     price: 'ab CHF 15',
-    variants: [
-      { name: 'Weiss Seidenmatt', color: '#f0eeeb', images: ['/images/portfolio/d175142e857f306a84f2c60fb7cc68e9.jpg'] },
-      { name: 'Basaltgrau Matt', color: '#606068', images: ['/images/portfolio/a7fafff86a55778e59ab45a1edc5683b.jpg'] },
+    images: [
+      '/images/schraenke/vector-cabinet/01.jpg',
+      '/images/schraenke/vector-cabinet/02.jpg',
+      '/images/schraenke/vector-cabinet/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -1132,13 +1137,16 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/a7fafff86a55778e59ab45a1edc5683b.jpg', icon: '◈', title: 'Raumhoch nach Mass', text: 'Vom Boden bis zur Decke für ein nahtloses, architektonisches Gesamtbild.' },
     ],
   },
+  // ponytail: images direct, no variants
   'jazz-cabinet': {
     name: 'Jazz Schrank',
     desc: 'Jazz Schrank überträgt das minimalistische Jazz-Design auf den Drehtürenschrank. Grifflose Fronten, klare Proportionen und hochwertige Materialien — Ordnung trifft Stil.',
     price: 'ab CHF 12',
-    variants: [
-      { name: 'Weiss Matt', color: '#eeecec', images: ['/images/portfolio/db53c589c2c71edf9c15cff02095a649.jpg'] },
-      { name: 'Schiefer NCS', color: '#787870', images: ['/images/portfolio/ca895d1cb8b2fa151d6a864423245981.jpg'] },
+    images: [
+      '/images/schraenke/jazz-cabinet/01.jpg',
+      '/images/schraenke/jazz-cabinet/02.jpg',
+      '/images/schraenke/jazz-cabinet/03.jpg',
+      '/images/schraenke/jazz-cabinet/04.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -1155,13 +1163,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/ca895d1cb8b2fa151d6a864423245981.jpg', icon: '◈', title: 'Flexibel konfigurierbar', text: 'Hängebereiche, Schubladen, Schuhfächer — individuell nach Bedarf.' },
     ],
   },
+  // ponytail: images direct, no variants
   'ice-cabinet': {
     name: 'Ice Schrank',
     desc: 'Ice Schrank besticht durch seine kristallklare Hochglanzoberfläche, die Licht reflektiert und Räume grosszügiger wirken lässt. Ein moderner Drehtürenschrank für alle, die Glanz mögen.',
     price: 'ab CHF 11',
-    variants: [
-      { name: 'Eisweiss Hochglanz', color: '#f5f5f8', images: ['/images/portfolio/ff00d21a3249642157bc86d56684c887.jpg'] },
-      { name: 'Silber Metallic', color: '#b8c0c8', images: ['/images/portfolio/a62062df65f1e6e8e2bba39ed65cb923.jpg'] },
+    images: [
+      '/images/schraenke/ice-cabinet/01.jpg',
+      '/images/schraenke/ice-cabinet/02.jpg',
+      '/images/schraenke/ice-cabinet/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
