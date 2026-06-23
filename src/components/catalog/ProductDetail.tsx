@@ -974,13 +974,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/7f05c377f639d49f663c2f12718821f0.jpg', icon: '◈', title: 'Vom Boden bis zur Decke', text: 'Raumhohe Ausführung maximiert den Stauraum und wirkt architektonisch wertvoll.' },
     ],
   },
+  // ponytail: images direct, no variants
   'nicolle-wardrobe': {
     name: 'Nicolle Schiebetüren',
     desc: 'Nicolle Schiebetürenschrank verbindet elegantes Frontdesign mit einem leise gleitenden Schienensystem. Mattglas, Spiegel oder strukturierte Paneele — die Wahl liegt bei Ihnen.',
     price: 'ab CHF 13',
-    variants: [
-      { name: 'Mattglas Weiss', color: '#eaece8', images: ['/images/portfolio/9870f10e4e0da083ba5641e341b2ffae.jpg'] },
-      { name: 'Spiegel Grau', color: '#b0b0b8', images: ['/images/portfolio/12b17a0fe961c3cb047f5fae71b4c43c.jpg'] },
+    images: [
+      '/images/schraenke/nicolle-wardrobe/01.jpg',
+      '/images/schraenke/nicolle-wardrobe/02.jpg',
+      '/images/schraenke/nicolle-wardrobe/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Schiebetürenschrank' },
@@ -997,13 +999,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/12b17a0fe961c3cb047f5fae71b4c43c.jpg', icon: '◈', title: 'Individuelle Inneneinteilung', text: 'Hängestangen, Schubladen, Schuhfächer — alles nach Ihren Bedürfnissen.' },
     ],
   },
+  // ponytail: images direct, no variants
   'nova-wardrobe': {
     name: 'Nova Schiebetüren',
-    desc: 'Nova Schiebetürenschrank steht für puren Minimalismus. Rahmenlose Fronten, bündige Oberflächen und ein unsichtbares Gleitsystem — ideal für moderne Schlafzimmer ohne Kompromisse.',
-    price: 'ab CHF 12',
-    variants: [
-      { name: 'Weiss Hochglanz', color: '#f2f0ee', images: ['/images/portfolio/18ae86c821167259f84396ce9b60eb96.jpg'] },
-      { name: 'Anthrazit Matt', color: '#484848', images: ['/images/portfolio/f1733d50f02ed5408865f28a42a7065f.jpg'] },
+    desc: 'Nova Schiebetürenschrank repräsentiert modernes Wardrobendesign mit dünnsten Profilleisten und maximaler Glasfläche. Ein nahezu rahmenloses Design für stilvolle Minimalisten.',
+    price: 'ab CHF 16',
+    images: [
+      '/images/schraenke/nova-wardrobe/01.jpg',
+      '/images/schraenke/nova-wardrobe/02.jpg',
+      '/images/schraenke/nova-wardrobe/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Schiebetürenschrank' },
@@ -1020,13 +1024,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/f1733d50f02ed5408865f28a42a7065f.jpg', icon: '◈', title: 'Beliebige Raumhöhe', text: 'Passt sich jeder Raumhöhe an — vom Standard bis zum Loft.' },
     ],
   },
+  // ponytail: images direct, no variants
   'spark-wardrobe': {
     name: 'Spark Schiebetüren',
-    desc: 'Spark Schiebetürenschrank bringt die markante Spark-Struktur in das Gleittürenformat. Robuste Paneele in verschiedenen Texturen, kombinierbar mit Spiegel- oder Glasfeldern.',
+    desc: 'Spark Schiebetürenschrank mit strukturierten Stein-MDF-Platten schafft ein robustes, modernes Flair. Die Schiebetüren sparen Platz und halten Ordnung — ideal für urbane Wohnungen.',
     price: 'ab CHF 14',
-    variants: [
-      { name: 'Graphit Struktur', color: '#545454', images: ['/images/portfolio/9af035a18ef5a6562cb5274cc15f7669.jpg'] },
-      { name: 'Sand Matt', color: '#d0c4a8', images: ['/images/portfolio/b38e24412ca113fe5b5620ef772bb4c3.jpg'] },
+    images: [
+      '/images/schraenke/spark-wardrobe/01.jpg',
+      '/images/schraenke/spark-wardrobe/02.jpg',
+      '/images/schraenke/spark-wardrobe/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Schiebetürenschrank' },
@@ -1043,13 +1049,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/b38e24412ca113fe5b5620ef772bb4c3.jpg', icon: '◈', title: 'Robuste Konstruktion', text: 'Stabile Gleiter und Doppelschienen für jahrelangen reibungslosen Betrieb.' },
     ],
   },
+  // ponytail: images direct, no variants
   'top-line-wardrobe': {
     name: 'Top Line Schiebetüren',
-    desc: 'Top Line ist das Premium-Schiebetürsystem von Marya — mit schwerem Aluminiumprofil, bündigem Soft-Stop und einer nahezu unbegrenzten Auswahl an Füllelementen für anspruchsvolle Einrichtungen.',
-    price: 'ab CHF 16',
-    variants: [
-      { name: 'Alu / Glas Klar', color: '#d0d8e0', images: ['/images/portfolio/c8404b22e082c785b272c0c11e93ba55.jpg'] },
-      { name: 'Alu / Eiche Dekor', color: '#b89860', images: ['/images/portfolio/838d28dd2530824b20527b8669e2d750.jpg'] },
+    desc: 'Top Line Schiebetürenschrank kombiniert hochwertige italienische Schiebesysteme mit luxuriösen Hochglanz- und Mattlack-Fronten. Für alle, die keinen Kompromiss machen.',
+    price: 'ab CHF 20',
+    images: [
+      '/images/schraenke/top-line-wardrobe/01.jpg',
+      '/images/schraenke/top-line-wardrobe/02.jpg',
+      '/images/schraenke/top-line-wardrobe/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Premium-Schiebetürenschrank' },

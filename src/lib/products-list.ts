@@ -330,10 +330,10 @@ export const PRODUCTS: Product[] = [
 
   // ── Schränke · Schiebetüren ──────────────────────────────────────
   { name: 'Mix 22 Schiebetüren',   slug: 'mix-wardrobe',       cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/schraenke/mix-wardrobe/01.jpg', images: ['/images/schraenke/mix-wardrobe/01.jpg','/images/schraenke/mix-wardrobe/02.jpg','/images/schraenke/mix-wardrobe/03.jpg','/images/schraenke/mix-wardrobe/04.jpg'] },
-  { name: 'Nicolle Schiebetüren',  slug: 'nicolle-wardrobe',   cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/portfolio/11cd4919f13c0b0cac58f91a24d6772f.jpg' },
-  { name: 'Nova Schiebetüren',     slug: 'nova-wardrobe',      cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/portfolio/76c92d48046820a4a3a0e186eb80c2e1.jpg' },
-  { name: 'Spark Schiebetüren',    slug: 'spark-wardrobe',     cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/portfolio/cb8ac7c9b54ecc6767f8d9db0f96637b.jpg' },
-  { name: 'Top Line Schiebetüren', slug: 'top-line-wardrobe',  cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/portfolio/925ab6fc0311ffc456f9e926be38d8c7.jpg' },
+  { name: 'Nicolle Schiebetüren',  slug: 'nicolle-wardrobe',    cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/schraenke/nicolle-wardrobe/01.jpg', images: ['/images/schraenke/nicolle-wardrobe/01.jpg','/images/schraenke/nicolle-wardrobe/02.jpg','/images/schraenke/nicolle-wardrobe/03.jpg'] },
+  { name: 'Nova Schiebetüren',      slug: 'nova-wardrobe',       cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/schraenke/nova-wardrobe/01.jpg', images: ['/images/schraenke/nova-wardrobe/01.jpg','/images/schraenke/nova-wardrobe/02.jpg','/images/schraenke/nova-wardrobe/03.jpg'] },
+  { name: 'Spark Schiebetüren',     slug: 'spark-wardrobe',      cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/schraenke/spark-wardrobe/01.jpg', images: ['/images/schraenke/spark-wardrobe/01.jpg','/images/schraenke/spark-wardrobe/02.jpg','/images/schraenke/spark-wardrobe/03.jpg'] },
+  { name: 'Top Line Schiebetüren',  slug: 'top-line-wardrobe',   cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/schraenke/top-line-wardrobe/01.jpg', images: ['/images/schraenke/top-line-wardrobe/01.jpg','/images/schraenke/top-line-wardrobe/02.jpg','/images/schraenke/top-line-wardrobe/03.jpg'] },
   { name: 'Jazz Schiebetüren',     slug: 'jazz-wardrobe',      cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/portfolio/d848f59694732153b341c1a463ae8ea8.jpg' },
 
   // ── Schränke · Ankleidezimmer ────────────────────────────────────
