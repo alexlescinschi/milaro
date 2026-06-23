@@ -330,11 +330,7 @@ export const PRODUCTS: Product[] = [
 
   // ── Schränke · Schiebetüren ──────────────────────────────────────
   { name: 'Mix 22 Schiebetüren',   slug: 'mix-wardrobe',       cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/schraenke/mix-wardrobe/01.jpg', images: ['/images/schraenke/mix-wardrobe/01.jpg','/images/schraenke/mix-wardrobe/02.jpg','/images/schraenke/mix-wardrobe/03.jpg','/images/schraenke/mix-wardrobe/04.jpg'] },
-  { name: 'Nicolle Schiebetüren',  slug: 'nicolle-wardrobe',    cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/schraenke/nicolle-wardrobe/01.jpg', images: ['/images/schraenke/nicolle-wardrobe/01.jpg','/images/schraenke/nicolle-wardrobe/02.jpg','/images/schraenke/nicolle-wardrobe/03.jpg'] },
-  { name: 'Nova Schiebetüren',      slug: 'nova-wardrobe',       cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/schraenke/nova-wardrobe/01.jpg', images: ['/images/schraenke/nova-wardrobe/01.jpg','/images/schraenke/nova-wardrobe/02.jpg','/images/schraenke/nova-wardrobe/03.jpg'] },
-  { name: 'Spark Schiebetüren',     slug: 'spark-wardrobe',      cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/schraenke/spark-wardrobe/01.jpg', images: ['/images/schraenke/spark-wardrobe/01.jpg','/images/schraenke/spark-wardrobe/02.jpg','/images/schraenke/spark-wardrobe/03.jpg'] },
-  { name: 'Top Line Schiebetüren',  slug: 'top-line-wardrobe',   cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/schraenke/top-line-wardrobe/01.jpg', images: ['/images/schraenke/top-line-wardrobe/01.jpg','/images/schraenke/top-line-wardrobe/02.jpg','/images/schraenke/top-line-wardrobe/03.jpg'] },
-  { name: 'Jazz Schiebetüren',     slug: 'jazz-wardrobe',      cat: 'schraenke', type: 'schiebetuer',    label: 'Schiebetürenschrank', img: '/images/portfolio/d848f59694732153b341c1a463ae8ea8.jpg' },
+
 
   // ── Schränke · Ankleidezimmer ────────────────────────────────────
   { name: 'Optima Ankleidezimmer', slug: 'optima-dressing', cat: 'schraenke', type: 'ankleidezimmer', label: 'Ankleidezimmer', img: '/images/portfolio/8e757d28427f21dc5c86e981ca5ea1f7.jpg' },
