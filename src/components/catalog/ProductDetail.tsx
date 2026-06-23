@@ -1188,13 +1188,17 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/a62062df65f1e6e8e2bba39ed65cb923.jpg', icon: '◈', title: 'Massgefertigt', text: 'Auf Ihre Raummasse zugeschnitten — kein Millimeter verschwendet.' },
     ],
   },
+  // ponytail: images direct, no variants
   'integrato-cabinet': {
     name: 'Integrato Schrank',
-    desc: 'Integrato Schrank übernimmt die puristischen Werte der Küchenserie ins Schlafzimmer — grifflose, emailbeschichtete MDF-Fronten, klare Geometrie und maximale Innenraumnutzung.',
-    price: 'ab CHF 13',
-    variants: [
-      { name: 'Weiss Email Matt', color: '#f2f0ed', images: ['/images/portfolio/45a5b55f9fe0c6bad468b8043102ece5.jpg'] },
-      { name: 'Grau Email Matt', color: '#a0a0a8', images: ['/images/portfolio/3a87aea9d8a9744a70ea184deb847a9e.jpg'] },
+    desc: 'Integrato Schrank bringt die grifflose Integrato-Ästhetik ins Schlafzimmer. Dank Push-to-Open-Mechanismus und nahtloser Optik wirkt er wie eine moderne Wandverkleidung.',
+    price: 'ab CHF 16',
+    images: [
+      '/images/schraenke/integrato-cabinet/01.jpg',
+      '/images/schraenke/integrato-cabinet/02.jpg',
+      '/images/schraenke/integrato-cabinet/03.jpg',
+      '/images/schraenke/integrato-cabinet/04.jpg',
+      '/images/schraenke/integrato-cabinet/05.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -1211,13 +1215,17 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/3a87aea9d8a9744a70ea184deb847a9e.jpg', icon: '◈', title: 'Maximale Innenraumnutzung', text: 'Durchdachte Innenaufteilung mit Platz für Kleidung, Wäsche und Zubehör.' },
     ],
   },
+  // ponytail: images direct, no variants
   'camelia-cabinet': {
     name: 'Kamelie Schrank',
-    desc: 'Kamelie Schrank ist der klassische Drehtürenschrank in edlem Gewand — mit filigranen Rahmenprofilen, eleganten Griffen und einer Auswahl an zeitlosen Farben für das Schlafzimmer.',
+    desc: 'Kamelie Schrank begeistert mit floral-inspirierten Fronten und weichen Linien. Die Kombination aus zarten Fräsungen und hochwertigen Lacken verleiht jedem Schlafzimmer eine romantische Note.',
     price: 'ab CHF 14',
-    variants: [
-      { name: 'Elfenbein Seidenmatt', color: '#e8e0d0', images: ['/images/portfolio/0df0212946e360ede96d1b4bc3bc7c55.jpg'] },
-      { name: 'Cashmere Rosa', color: '#e0c8c0', images: ['/images/portfolio/0633b1096ed3d65aaec6042130c0a363.jpg'] },
+    images: [
+      '/images/schraenke/camelia-cabinet/01.jpg',
+      '/images/schraenke/camelia-cabinet/02.jpg',
+      '/images/schraenke/camelia-cabinet/03.jpg',
+      '/images/schraenke/camelia-cabinet/04.jpg',
+      '/images/schraenke/camelia-cabinet/05.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -1234,13 +1242,19 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/0633b1096ed3d65aaec6042130c0a363.jpg', icon: '◈', title: 'Massgefertigt', text: 'Jeder Schrank wird nach Ihren Raummassen und Wünschen gefertigt.' },
     ],
   },
+  // ponytail: images direct, no variants
   'antro-cabinet': {
     name: 'Antro Schrank',
-    desc: 'Antro Schrank bringt die natürliche Stein- und Holzoptik der Antro-Küchenserie ins Schlafzimmer. Strukturierte Oberflächen, organische Texturen und eine moderne Formensprache.',
-    price: 'ab CHF 15',
-    variants: [
-      { name: 'Steinoptik Grau', color: '#909090', images: ['/images/portfolio/b6eb8538fb60f9e8803a9348a329f09e.jpg'] },
-      { name: 'Holzdekor Walnuss', color: '#7a5030', images: ['/images/portfolio/68eccfec3fcffd9dcd4b1b0e3071249f.jpg'] },
+    desc: 'Antro Schrank verbindet rustikale Holzstruktur mit modernen Designelementen. Massive Fronten, sichtbare Holzmaserung und versteckte Griffleisten — perfekt für alle, die natürliche Materialien lieben.',
+    price: 'ab CHF 11',
+    images: [
+      '/images/schraenke/antro-cabinet/01.jpg',
+      '/images/schraenke/antro-cabinet/02.jpg',
+      '/images/schraenke/antro-cabinet/03.jpg',
+      '/images/schraenke/antro-cabinet/04.jpg',
+      '/images/schraenke/antro-cabinet/05.jpg',
+      '/images/schraenke/antro-cabinet/06.jpg',
+      '/images/schraenke/antro-cabinet/07.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -1257,13 +1271,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/68eccfec3fcffd9dcd4b1b0e3071249f.jpg', icon: '◈', title: 'Robuste Oberfläche', text: 'Kratzfeste Beschichtung, die täglich belastet werden kann.' },
     ],
   },
+  // ponytail: images direct, no variants
   'trento-cabinet': {
     name: 'Trento Schrank',
-    desc: 'Trento Schrank verbindet die Email-Oberflächen der beliebten Trento-Küche mit einer klassischen Schranksilhouette. Matt oder seidenmatt, mit eleganten Griffen oder grifflos.',
-    price: 'ab CHF 13',
-    variants: [
-      { name: 'Cremeweiss Email', color: '#f0ece0', images: ['/images/portfolio/4fc1618422a6183e874632c201e5ba57.jpg'] },
-      { name: 'Granitgrau Email', color: '#787878', images: ['/images/portfolio/30bda8c359161d8808845c2d28c5e710.jpg'] },
+    desc: 'Trento Schrank besticht durch seine markante Lamellenoptik und hochwertige Haptik. Die vertikalen Fräsungen schaffen ein eindrucksvolles Licht- und Schattenspiel — ein Statement im Schlafzimmer.',
+    price: 'ab CHF 12',
+    images: [
+      '/images/schraenke/trento-cabinet/01.jpg',
+      '/images/schraenke/trento-cabinet/02.jpg',
+      '/images/schraenke/trento-cabinet/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
