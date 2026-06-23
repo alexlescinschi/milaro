@@ -11,7 +11,8 @@ type Variant = { name: string; color: string; images: string[] }
 type Feature = { icon?: string; title: string; text: string; img?: string }
 type Product = {
   name: string; desc: string; price: string; tagline: string;
-  variants: Variant[]
+  variants?: Variant[]
+  images?: string[]
   specs: { label: string; value: string }[]
   features: Feature[]
   featureImg: string
@@ -841,13 +842,18 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/78e7482b94a2107ea5db1e1f0ec879ea.jpg', icon: '◈', title: 'Grosse Farbauswahl', text: 'Von reinweissem Hochglanz bis zu tiefem Anthrazit — wählen Sie den Ton, der zu Ihrem Zuhause passt.' },
     ],
   },
+  // ponytail: images direct, no variants — matches marya.ru gallery-only layout
   'nicolle-cabinet': {
     name: 'Nicolle Schrank',
     desc: 'Der Drehtürenschrank Nicolle vereint klassische Eleganz mit modernen Materialien. Hochwertige MDF-Fronten in mattem oder glänzendem Finish, präzise Scharniere und eine durchdachte Innenaufteilung machen ihn zum perfekten Alltagsbegleiter.',
     price: 'ab CHF 12',
-    variants: [
-      { name: 'Weiss Matt', color: '#f0eeeb', images: ['/images/portfolio/dcb38934e0b6fa288a1c17a888d8ec7f.jpg'] },
-      { name: 'Cashmere Beige', color: '#d4c8b8', images: ['/images/portfolio/b00f685e4aaf8e201a0b752d30a3af37.jpg'] },
+    images: [
+      '/images/schraenke/nicolle-cabinet/01.jpg',
+      '/images/schraenke/nicolle-cabinet/02.jpg',
+      '/images/schraenke/nicolle-cabinet/03.jpg',
+      '/images/schraenke/nicolle-cabinet/04.jpg',
+      '/images/schraenke/nicolle-cabinet/05.jpg',
+      '/images/schraenke/nicolle-cabinet/06.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -1821,7 +1827,7 @@ export default function ProductPageClient({ category, slug, catName }: { categor
     )
   }
 
-  const v = p.variants[variant]
+  const v = p.variants ? p.variants[variant] : null
 
   return (
     <>
@@ -1832,17 +1838,17 @@ export default function ProductPageClient({ category, slug, catName }: { categor
           <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap' }}>
             {/* Gallery */}
             <div style={{ width: '55%', minWidth: 300 }}>
-              <ProductGallery images={v.images} videos={p.videos || []} name={`${p.name} ${v.name}`} />
+              <ProductGallery images={p.images || v!.images} videos={p.videos || []} name={`${p.name} ${p.images ? '' : v!.name}`} />
             </div>
 
             {/* Info */}
             <div style={{ width: '40%', minWidth: 300 }}>
               <h1 style={{ fontFamily: 'var(--sb-reg)', fontSize: '2.2rem', marginBottom: '0.3rem' }}>{p.name}</h1>
-              <p style={{ fontSize: '0.9rem', color: 'var(--primary-color)', marginBottom: '1.2rem' }}>{v.name}</p>
+              {!p.images && <p style={{ fontSize: '0.9rem', color: 'var(--primary-color)', marginBottom: '1.2rem' }}>{v!.name}</p>}
               <p className="uk-text-muted" style={{ lineHeight: 1.8, marginBottom: '1.5rem' }}>{p.desc}</p>
 
               {/* Color variants */}
-              {p.variants.length > 1 && (
+              {!p.images && p.variants && p.variants.length > 1 && (
               <div style={{ marginBottom: '1.5rem' }}>
                 <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--muted-color)', marginBottom: '0.6rem' }}>
                   Dekor — {p.variants.length} Varianten
@@ -2276,7 +2282,7 @@ export default function ProductPageClient({ category, slug, catName }: { categor
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
             </button>
             <h3 style={{ fontFamily: 'var(--sb-reg)', fontSize: '1.4rem', marginBottom: '0.3rem', textAlign: 'center' }}>
-              Projekt anfragen — {p.name} {v.name}
+              Projekt anfragen — {p.name}{v ? ` ${v.name}` : ''}
             </h3>
             <p style={{ fontSize: '0.85rem', color: 'var(--muted-color)', marginBottom: '1.5rem', textAlign: 'center', lineHeight: 1.5 }}>
               Füllen Sie das Formular aus und erhalten Sie einen individuellen<br />
