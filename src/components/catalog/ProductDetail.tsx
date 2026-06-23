@@ -879,8 +879,6 @@ const products: Record<string, Product> = {
       '/images/schraenke/mixal-cabinet/01.jpg',
       '/images/schraenke/mixal-cabinet/02.jpg',
       '/images/schraenke/mixal-cabinet/03.jpg',
-      '/images/schraenke/mixal-cabinet/04.jpg',
-      '/images/schraenke/mixal-cabinet/05.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -934,13 +932,6 @@ const products: Record<string, Product> = {
       '/images/schraenke/teramo-cabinet/03.jpg',
       '/images/schraenke/teramo-cabinet/04.jpg',
       '/images/schraenke/teramo-cabinet/05.jpg',
-      '/images/schraenke/teramo-cabinet/06.jpg',
-      '/images/schraenke/teramo-cabinet/07.jpg',
-      '/images/schraenke/teramo-cabinet/08.jpg',
-      '/images/schraenke/teramo-cabinet/09.jpg',
-      '/images/schraenke/teramo-cabinet/10.jpg',
-      '/images/schraenke/teramo-cabinet/11.jpg',
-      '/images/schraenke/teramo-cabinet/12.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
