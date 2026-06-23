@@ -333,6 +333,6 @@ export const PRODUCTS: Product[] = [
 
 
   // ── Schränke · Ankleidezimmer ────────────────────────────────────
-  { name: 'Optima Ankleidezimmer', slug: 'optima-dressing', cat: 'schraenke', type: 'ankleidezimmer', label: 'Ankleidezimmer', img: '/images/portfolio/8e757d28427f21dc5c86e981ca5ea1f7.jpg' },
-  { name: 'Stilos Ankleidezimmer', slug: 'stilos',          cat: 'schraenke', type: 'ankleidezimmer', label: 'Ankleidezimmer', img: '/images/portfolio/bb6685375a1ef9bb17b6775b6fb2c228.jpg' },
+  { name: 'Optima Ankleidezimmer', slug: 'optima-dressing', cat: 'schraenke', type: 'ankleidezimmer', label: 'Ankleidezimmer', img: '/images/schraenke/optima-dressing/01.jpg', images: ['/images/schraenke/optima-dressing/01.jpg','/images/schraenke/optima-dressing/02.jpg','/images/schraenke/optima-dressing/03.jpg'] },
+  { name: 'Stilos Ankleidezimmer', slug: 'stilos',          cat: 'schraenke', type: 'ankleidezimmer', label: 'Ankleidezimmer', img: '/images/schraenke/stilos/01.jpg', images: ['/images/schraenke/stilos/01.jpg','/images/schraenke/stilos/02.jpg','/images/schraenke/stilos/03.jpg'] },
 ]

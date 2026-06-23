@@ -1261,13 +1261,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/16598608d9fb8061cfaff10ac164bed7.jpg', icon: '◈', title: 'Massgefertigt', text: 'Auf Ihre Raummasse zugeschnitten — kein Millimeter verschwendet.' },
     ],
   },
+  // ponytail: images direct, no variants
   'optima-dressing': {
     name: 'Optima Ankleidezimmer',
     desc: 'Optima ist das modulare Ankleidezimmersystem von Marya — frei kombinierbare Regale, Hängebereiche, Schubladen und Schuhregale für eine perfekt organisierte persönliche Garderobe.',
     price: 'ab CHF 18',
-    variants: [
-      { name: 'Weiss Matt', color: '#f0eeeb', images: ['/images/portfolio/6ca6eaeb1fc4e026a121756037673dd9.jpg'] },
-      { name: 'Eiche Natur', color: '#c0a060', images: ['/images/portfolio/898d70bb2b670c231f4e07d7641384dc.jpg'] },
+    images: [
+      '/images/schraenke/optima-dressing/01.jpg',
+      '/images/schraenke/optima-dressing/02.jpg',
+      '/images/schraenke/optima-dressing/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Modulares Ankleidezimmer' },
@@ -1284,13 +1286,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/898d70bb2b670c231f4e07d7641384dc.jpg', icon: '◈', title: 'Massgeplant', text: 'Unsere Designer planen Ihr Ankleidezimmer kostenlos nach Ihrem Grundriss.' },
     ],
   },
+  // ponytail: images direct, no variants
   'stilos': {
     name: 'Stilos Ankleidezimmer',
     desc: 'Stilos ist das Premium-Ankleidezimmersystem mit Glasfronten und Rahmenstruktur — für alle, die Ihr Ankleidezimmer wie ein Modegeschäft gestalten möchten. Transparent, organisiert, luxuriös.',
     price: 'ab CHF 22',
-    variants: [
-      { name: 'Glas / Weiss Rahmen', color: '#e8eef0', images: ['/images/portfolio/cbdaee5a1b4614182908f5d1eb3f8209.jpg'] },
-      { name: 'Glas / Alu Rahmen', color: '#c0c8d0', images: ['/images/portfolio/6b093a5d13ae291af6895891f2ec70eb.jpg'] },
+    images: [
+      '/images/schraenke/stilos/01.jpg',
+      '/images/schraenke/stilos/02.jpg',
+      '/images/schraenke/stilos/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Premium Ankleidezimmer' },
