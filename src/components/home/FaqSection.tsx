@@ -145,6 +145,7 @@ export default function FaqSection() {
       <style jsx global>{`
         @media (max-width: 768px) {
           .faq-grid { grid-template-columns: 1fr !important; }
+          .faq-grid > div:first-child { position: static !important; }
         }
       `}</style>
     </section>
