@@ -1715,6 +1715,69 @@ const products: Record<string, Product> = {
       { img: '/images/products/0rvO3qDHq57zOREaB_to7yd.jpg', icon: '◈', title: 'Schweizer Präzision', text: 'Massgenau gefertigt, millimetergenau montiert — für eine Küche, die einfach passt.' },
     ],
   },
+
+  // ── Bäder ───────────────────────────────────────────────
+  // ponytail: images direct, no variants
+  'nicolle-bathroom': {
+    name: 'Nicole Badezimmer',
+    desc: 'Das Nicole Badezimmer vereint klassische Eleganz mit moderner Funktionalität. Hochwertige MDF-Fronten mit edlen Lackierungen und durchdachte Stauraumlösungen für Ihr persönliches Spa-Erlebnis.',
+    price: 'ab CHF 160',
+    images: ['/images/baeder/nicolle-bathroom/01.jpg'],
+    specs: [
+      { label: 'Stil', value: 'Klassisch' },
+      { label: 'Material', value: 'MDF lackiert' },
+      { label: 'Garantie', value: 'Bis zu 20 Jahre' },
+      { label: 'Waschtisch', value: 'Inkl. Keramik' },
+    ],
+    tagline: 'Klassische Eleganz',
+    featureImg: '/images/baeder/nicolle-bathroom/01.jpg',
+    features: [],
+  },
+  'trento-bathroom': {
+    name: 'Trento Badezimmer',
+    desc: 'Das Trento Badezimmer mit Lamellenoptik und hochwertigen Oberflächen. Markante vertikale Struktur trifft auf praktische Aufbewahrungslösungen.',
+    price: 'ab CHF 127',
+    images: ['/images/baeder/trento-bathroom/01.jpg'],
+    specs: [
+      { label: 'Stil', value: 'Klassisch' },
+      { label: 'Material', value: 'MDF lackiert' },
+      { label: 'Garantie', value: 'Bis zu 20 Jahre' },
+      { label: 'Oberfläche', value: 'Lamellenstruktur' },
+    ],
+    tagline: 'Struktur und Stil',
+    featureImg: '/images/baeder/trento-bathroom/01.jpg',
+    features: [],
+  },
+  'camelia-bathroom': {
+    name: 'Kamelie Badezimmer',
+    desc: 'Das Kamelie Badezimmer besticht durch seine floral-inspirierten Fronten und weichen Linien. Romantische Details treffen auf praktische Badmöbel.',
+    price: 'ab CHF 147',
+    images: ['/images/baeder/camelia-bathroom/01.jpg'],
+    specs: [
+      { label: 'Stil', value: 'Klassisch' },
+      { label: 'Material', value: 'MDF lackiert' },
+      { label: 'Garantie', value: 'Bis zu 20 Jahre' },
+      { label: 'Design', value: 'Florale Fräsung' },
+    ],
+    tagline: 'Romantisch & praktisch',
+    featureImg: '/images/baeder/camelia-bathroom/01.jpg',
+    features: [],
+  },
+  'mix-22-bathroom': {
+    name: 'Mix 22 Badezimmer',
+    desc: 'Das Mix 22 Badezimmer kombiniert verschiedene Materialien zu einem harmonischen Ganzen. Holzdekor, Glas und Lack treffen auf modernste Badmöbeltechnik.',
+    price: 'ab CHF 150',
+    images: ['/images/baeder/mix-22-bathroom/01.jpg'],
+    specs: [
+      { label: 'Stil', value: 'Modern' },
+      { label: 'Material', value: 'Dekor Mix' },
+      { label: 'Garantie', value: 'Bis zu 20 Jahre' },
+      { label: 'Fronten', value: 'Kombinierbar' },
+    ],
+    tagline: 'Materialvielfalt',
+    featureImg: '/images/baeder/mix-22-bathroom/01.jpg',
+    features: [],
+  },
 }
 
 const companyFeatures = [

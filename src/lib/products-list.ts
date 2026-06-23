@@ -335,4 +335,10 @@ export const PRODUCTS: Product[] = [
   // ── Schränke · Ankleidezimmer ────────────────────────────────────
   { name: 'Optima Ankleidezimmer', slug: 'optima-dressing', cat: 'schraenke', type: 'ankleidezimmer', label: 'Ankleidezimmer', img: '/images/schraenke/optima-dressing/01.jpg', images: ['/images/schraenke/optima-dressing/01.jpg','/images/schraenke/optima-dressing/02.jpg','/images/schraenke/optima-dressing/03.jpg'] },
   { name: 'Stilos Ankleidezimmer', slug: 'stilos',          cat: 'schraenke', type: 'ankleidezimmer', label: 'Ankleidezimmer', img: '/images/schraenke/stilos/01.jpg', images: ['/images/schraenke/stilos/01.jpg','/images/schraenke/stilos/02.jpg','/images/schraenke/stilos/03.jpg'] },
+
+  // ── Bäder ───────────────────────────────────────────────
+  { name: 'Nicole Badezimmer',      slug: 'nicolle-bathroom',  cat: 'baeder', type: 'klassisch',  label: 'Badezimmer', img: '/images/baeder/nicolle-bathroom/01.jpg', images: ['/images/baeder/nicolle-bathroom/01.jpg','/images/baeder/nicolle-bathroom/02.jpg','/images/baeder/nicolle-bathroom/03.jpg'] },
+  { name: 'Trento Badezimmer',      slug: 'trento-bathroom',   cat: 'baeder', type: 'klassisch',  label: 'Badezimmer', img: '/images/baeder/trento-bathroom/01.jpg', images: ['/images/baeder/trento-bathroom/01.jpg','/images/baeder/trento-bathroom/02.jpg'] },
+  { name: 'Kamelie Badezimmer',     slug: 'camelia-bathroom',  cat: 'baeder', type: 'klassisch',  label: 'Badezimmer', img: '/images/baeder/camelia-bathroom/01.jpg', images: ['/images/baeder/camelia-bathroom/01.jpg'] },
+  { name: 'Mix 22 Badezimmer',      slug: 'mix-22-bathroom',   cat: 'baeder', type: 'modern',     label: 'Badezimmer', img: '/images/baeder/mix-22-bathroom/01.jpg', images: ['/images/baeder/mix-22-bathroom/01.jpg'] },
 ]

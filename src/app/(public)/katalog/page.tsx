@@ -29,6 +29,11 @@ const TYPE_TABS: Record<string, { id: string; label: string }[]> = {
     { id: 'schiebetuer',      label: 'Schiebetüren' },
     { id: 'ankleidezimmer',   label: 'Ankleidezimmer' },
   ],
+  baeder: [
+    { id: 'all',           label: 'Alle' },
+    { id: 'modern',        label: 'Modern' },
+    { id: 'klassisch',     label: 'Klassisch' },
+  ],
 }
 
 function CatalogContent() {
