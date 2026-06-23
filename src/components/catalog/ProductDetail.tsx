@@ -948,13 +948,16 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/9f5c98a6a2e0e7168a578af84b0c463c.jpg', icon: '◈', title: 'Massgefertigt', text: 'Jede Einheit wird auf Ihren Raum abgestimmt — vom Boden bis zur Decke.' },
     ],
   },
+  // ponytail: images direct, no variants
   'mix-wardrobe': {
     name: 'Mix 22 Schiebetüren',
     desc: 'Der Schiebetürenschrank Mix 22 spart Platz und bietet viel Stauraum. Glasfronten, Spiegel und Holzdekore lassen sich frei kombinieren — für eine Garderobe, die genauso individuell ist wie Sie.',
     price: 'ab CHF 11',
-    variants: [
-      { name: 'Glas / Weiss', color: '#e8eef0', images: ['/images/portfolio/7842363bc9dbe4f13d74ca85df3d5495.jpg'] },
-      { name: 'Spiegel / Eiche', color: '#c0a870', images: ['/images/portfolio/7f05c377f639d49f663c2f12718821f0.jpg'] },
+    images: [
+      '/images/schraenke/mix-wardrobe/01.jpg',
+      '/images/schraenke/mix-wardrobe/02.jpg',
+      '/images/schraenke/mix-wardrobe/03.jpg',
+      '/images/schraenke/mix-wardrobe/04.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Schiebetürenschrank' },
@@ -1296,13 +1299,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/30bda8c359161d8808845c2d28c5e710.jpg', icon: '◈', title: 'Passend zur Küche', text: 'Kombinierbar mit Trento Küche für ein einheitliches Wohnkonzept.' },
     ],
   },
+  // ponytail: images direct, no variants
   'allure-cabinet': {
     name: 'Jazz Allure Schrank',
-    desc: 'Jazz Allure Schrank vereint klassische Profildekore mit modernen Lacken. Filigrane Rahmen, edle Griffe und eine breite Farbauswahl machen ihn zum eleganten Mittelpunkt des Schlafzimmers.',
-    price: 'ab CHF 16',
-    variants: [
-      { name: 'Grauweiss Matt', color: '#e8e4de', images: ['/images/portfolio/be0583385e053fd140547030c0721f2d.jpg'] },
-      { name: 'Cashmere NCS', color: '#d0c0a8', images: ['/images/portfolio/06748076dc2e8c11fce5a1424420cfd2.jpg'] },
+    desc: 'Jazz Allure Schrank ist die Luxusvariante des Jazz-Klassikers — mit hochwertigen Spiegelfronten, edlen Metallic-Oberflächen und sanfter Innenbeleuchtung. Schlafzimmer wird zum Boudoir.',
+    price: 'ab CHF 18',
+    images: [
+      '/images/schraenke/allure-cabinet/01.jpg',
+      '/images/schraenke/allure-cabinet/02.jpg',
+      '/images/schraenke/allure-cabinet/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -1319,13 +1324,15 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/06748076dc2e8c11fce5a1424420cfd2.jpg', icon: '◈', title: 'Massgefertigt', text: 'Jede Einheit wird exakt auf Ihre Raummasse angepasst — vom Boden bis zur Decke.' },
     ],
   },
+  // ponytail: images direct, no variants
   'tokyo-cabinet': {
     name: 'Tokyo Schrank',
-    desc: 'Tokyo Schrank bringt fernöstliche Minimalismus-Ästhetik ins Schlafzimmer. Klare Linien, matte Lackfronten und ein schlankes Profil machen ihn zum stilvollen Begleiter in modernen Wohnungen.',
-    price: 'ab CHF 11',
-    variants: [
-      { name: 'Weiss Matt', color: '#efefed', images: ['/images/portfolio/75e842c2ea0fcb4e2d64ec93a175c429.jpg'] },
-      { name: 'Anthrazit Matt', color: '#484848', images: ['/images/portfolio/ceab8b038c7b4197662a554b12d6e1e9.jpg'] },
+    desc: 'Tokyo Schrank bringt fernöstliche Ästhetik ins Schlafzimmer. Schiebetüren mit japanischem Motiv, warme Holzdekore und versteckte Griffe schaffen eine Oase der Ruhe.',
+    price: 'ab CHF 14',
+    images: [
+      '/images/schraenke/tokyo-cabinet/01.jpg',
+      '/images/schraenke/tokyo-cabinet/02.jpg',
+      '/images/schraenke/tokyo-cabinet/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -1342,13 +1349,16 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/ceab8b038c7b4197662a554b12d6e1e9.jpg', icon: '◈', title: 'Für jeden Raum', text: 'Verfügbar in vielen Breiten und Höhen — ideal für Schlaf-, Kinder- oder Bürozimmer.' },
     ],
   },
+  // ponytail: images direct, no variants
   'tokyo-glyanets-cabinet': {
     name: 'Tokyo Glanz Schrank',
-    desc: 'Tokyo Glanz Schrank kombiniert minimalistische Formensprache mit einer glänzenden Hochglanzoberfläche. Hell, modern und pflegeleicht — der ideale Schrank für lichtdurchflutete Räume.',
-    price: 'ab CHF 12',
-    variants: [
-      { name: 'Weiss Hochglanz', color: '#f5f5f0', images: ['/images/portfolio/4836560adab1bb8eb998ee2d66f24174.jpg'] },
-      { name: 'Silber Hochglanz', color: '#c8c8d0', images: ['/images/portfolio/16598608d9fb8061cfaff10ac164bed7.jpg'] },
+    desc: 'Tokyo Glanz Schrank kombiniert das ruhige Tokyo-Design mit einer spiegelnden Hochglanz-Oberfläche. Glanzlack reflektiert das Licht und verleiht dem Schlafzimmer eine exklusive Atmosphäre.',
+    price: 'ab CHF 17',
+    images: [
+      '/images/schraenke/tokyo-glyanets-cabinet/01.jpg',
+      '/images/schraenke/tokyo-glyanets-cabinet/02.jpg',
+      '/images/schraenke/tokyo-glyanets-cabinet/03.jpg',
+      '/images/schraenke/tokyo-glyanets-cabinet/04.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
