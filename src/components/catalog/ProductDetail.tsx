@@ -870,36 +870,41 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/b00f685e4aaf8e201a0b752d30a3af37.jpg', icon: '◈', title: 'Massgefertigt', text: 'Jeder Schrank wird nach Ihren Raummassen produziert — kein Zentimeter verschwendet.' },
     ],
   },
+  // ponytail: images direct, no variants
   'mixal-cabinet': {
     name: 'Mixal Schrank',
     desc: 'Mixal verbindet Holzdekore mit modernen Lackfronten zu einem harmonischen Ganzen. Der Drehtürenschrank bietet maximalen Stauraum bei minimaler Optik — ideal für Schlafzimmer und Flure.',
     price: 'ab CHF 10',
-    variants: [
-      { name: 'Eiche Natur', color: '#c8a870', images: ['/images/portfolio/c8404b22e082c785b272c0c11e93ba55.jpg'] },
-      { name: 'Wenge Dunkel', color: '#3a2515', images: ['/images/portfolio/838d28dd2530824b20527b8669e2d750.jpg'] },
+    images: [
+      '/images/schraenke/mixal-cabinet/01.jpg',
+      '/images/schraenke/mixal-cabinet/02.jpg',
+      '/images/schraenke/mixal-cabinet/03.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
-      { label: 'Material', value: 'MDF + Holzdekor' },
+      { label: 'Material', value: 'Glas / MDF' },
       { label: 'Garantie', value: 'Bis zu 20 Jahre' },
-      { label: 'Oberfläche', value: 'Matt / Holzoptik' },
+      { label: 'Montage', value: 'Inkl. Aufbauservice' },
     ],
-    tagline: 'Holz und Harmonie',
+    tagline: 'Harmonie der Materialien',
     featureImg: '/images/portfolio/7a58d65e9c6a2fb00d2baba817e3e4ab.jpg',
     features: [
-      { img: '/images/portfolio/7a58d65e9c6a2fb00d2baba817e3e4ab.jpg', icon: '◇', title: 'Natürliche Materialien', text: 'Echte Holzdekore bringen Wärme und Charakter in jeden Raum.' },
-      { img: '/images/portfolio/c8404b22e082c785b272c0c11e93ba55.jpg', icon: '▦', title: 'Maximaler Stauraum', text: 'Intelligente Innenaufteilung mit Hängebereich, Schubladen und Fächern.' },
-      { img: '/images/portfolio/a239dadbbaad5628b4c88a7ef17bfd3d.jpg', icon: '▯', title: 'Langlebige Oberfläche', text: 'Kratzfeste Beschichtung — bleibt jahrelang schön und pflegeleicht.' },
-      { img: '/images/portfolio/838d28dd2530824b20527b8669e2d750.jpg', icon: '◈', title: 'Flexible Breiten', text: 'Erhältlich in verschiedenen Breiten — passt sich jedem Raumgrundriss an.' },
+      { img: '/images/portfolio/7a58d65e9c6a2fb00d2baba817e3e4ab.jpg', icon: '◇', title: 'Glas-Lack Kombination', text: 'Satiniertes Glas trifft auf seidenmatte Lackfronten — ein elegantes Zusammenspiel der Materialien.' },
+      { img: '/images/portfolio/c8404b22e082c785b272c0c11e93ba55.jpg', icon: '▦', title: 'Beleuchtung integrierbar', text: 'Optionale LED-Innenbeleuchtung setzt den Inhalt perfekt in Szene.' },
+      { img: '/images/portfolio/838d28dd2530824b20527b8669e2d750.jpg', icon: '▯', title: 'Optimierte Raumtiefe', text: 'Nur 58 cm Tiefe — ideal auch für Flure und kleinere Räume.' },
+      { img: '/images/portfolio/7a58d65e9c6a2fb00d2baba817e3e4ab.jpg', icon: '◈', title: 'Massgefertigt', text: 'Jeder Schrank wird nach Ihren Raummassen produziert — kein Zentimeter verschwendet.' },
     ],
   },
+  // ponytail: images direct, no variants
   'spark-cabinet': {
     name: 'Spark Schrank',
     desc: 'Spark Schrank bringt die charakteristische Spark-Ästhetik ins Schlafzimmer — strukturierte Oberflächen, markante Linienführung und eine robuste Konstruktion für den täglichen Gebrauch.',
     price: 'ab CHF 13',
-    variants: [
-      { name: 'Graphit Struktur', color: '#505050', images: ['/images/portfolio/76c92d48046820a4a3a0e186eb80c2e1.jpg'] },
-      { name: 'Sandbeige Matt', color: '#d0c0a0', images: ['/images/portfolio/4198920705b5069067c6290eb103b85d.jpg'] },
+    images: [
+      '/images/schraenke/spark-cabinet/01.jpg',
+      '/images/schraenke/spark-cabinet/02.jpg',
+      '/images/schraenke/spark-cabinet/03.jpg',
+      '/images/schraenke/spark-cabinet/04.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
@@ -916,13 +921,17 @@ const products: Record<string, Product> = {
       { img: '/images/portfolio/4198920705b5069067c6290eb103b85d.jpg', icon: '◈', title: 'Individuelle Konfiguration', text: 'Höhe, Breite und Innenaufteilung werden nach Ihren Wünschen gefertigt.' },
     ],
   },
+  // ponytail: images direct, no variants
   'teramo-cabinet': {
     name: 'Teramo Schrank',
     desc: 'Teramo Schrank überzeugt mit elegantem Rahmendesign und hochwertigen Oberflächen. Die Kombination aus Griffleisten und matten Fronten schafft eine luxuriöse Atmosphäre im Schlafzimmer.',
     price: 'ab CHF 14',
-    variants: [
-      { name: 'Weiss Seidenmatt', color: '#efefed', images: ['/images/portfolio/0eefa72016688da9c04c58798c059e81.jpg'] },
-      { name: 'Taubengrau NCS', color: '#9898a0', images: ['/images/portfolio/9f5c98a6a2e0e7168a578af84b0c463c.jpg'] },
+    images: [
+      '/images/schraenke/teramo-cabinet/01.jpg',
+      '/images/schraenke/teramo-cabinet/02.jpg',
+      '/images/schraenke/teramo-cabinet/03.jpg',
+      '/images/schraenke/teramo-cabinet/04.jpg',
+      '/images/schraenke/teramo-cabinet/05.jpg',
     ],
     specs: [
       { label: 'Typ', value: 'Drehtürenschrank' },
