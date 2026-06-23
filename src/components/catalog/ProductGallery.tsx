@@ -105,7 +105,7 @@ export default function ProductGallery({ images, videos = [], name }: Props) {
           {images.map((src, i) => (
             <button
               key={i}
-              onClick={() => setActive(i)}
+              onMouseEnter={() => setActive(i)}
               style={{
                 flex: 'none', width: 80, height: 60, borderRadius: '0.5rem',
                 overflow: 'hidden', border: i === active ? '2px solid var(--primary-color)' : '2px solid transparent',

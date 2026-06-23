@@ -312,7 +312,7 @@ export const PRODUCTS: Product[] = [
     ] },
 
   // ── Schränke · Drehtüren ─────────────────────────────────────────
-  { name: 'Nicolle Schrank',       slug: 'nicolle-cabinet',        cat: 'schraenke', type: 'drehtueren',     label: 'Drehtürenschrank', img: '/images/portfolio/b5c0e8a955b0cf788391352a767dfc91.jpg' },
+  { name: 'Nicolle Schrank',       slug: 'nicolle-cabinet',        cat: 'schraenke', type: 'drehtueren',     label: 'Drehtürenschrank', img: '/images/schraenke/nicolle-cabinet/01.jpg' },
   { name: 'Mixal Schrank',         slug: 'mixal-cabinet',          cat: 'schraenke', type: 'drehtueren',     label: 'Drehtürenschrank', img: '/images/portfolio/8c2729ab6933bddb9f754ee2355d1cd8.jpg' },
   { name: 'Spark Schrank',         slug: 'spark-cabinet',          cat: 'schraenke', type: 'drehtueren',     label: 'Drehtürenschrank', img: '/images/portfolio/b00f685e4aaf8e201a0b752d30a3af37.jpg' },
   { name: 'Teramo Schrank',        slug: 'teramo-cabinet',         cat: 'schraenke', type: 'drehtueren',     label: 'Drehtürenschrank', img: '/images/portfolio/5391db83332707979af6cc56e968df21.jpg' },
