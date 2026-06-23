@@ -1838,6 +1838,51 @@ const products: Record<string, Product> = {
     featureImg: '/images/baeder/tokyo-bathroom/01.jpg',
     features: [],
   },
+  'teramo-bathroom': {
+    name: 'Teramo Badezimmer',
+    desc: 'Das Teramo Badezimmer mit elegantem Rahmendesign und Aluminium-Griffleisten. Hochwertige Lackoberflächen für ein luxuriöses Badambiente.',
+    price: 'ab CHF 132',
+    images: ['/images/baeder/teramo-bathroom/01.jpg','/images/baeder/teramo-bathroom/02.jpg','/images/baeder/teramo-bathroom/03.jpg','/images/baeder/teramo-bathroom/04.jpg','/images/baeder/teramo-bathroom/05.jpg'],
+    specs: [
+      { label: 'Stil', value: 'Modern' },
+      { label: 'Material', value: 'MDF lackiert' },
+      { label: 'Garantie', value: 'Bis zu 20 Jahre' },
+      { label: 'Griffe', value: 'Aluminium-Griffleiste' },
+    ],
+    tagline: 'Eleganz im Bad',
+    featureImg: '/images/baeder/teramo-bathroom/01.jpg',
+    features: [],
+  },
+  'urbano-bathroom': {
+    name: 'Urbano Badezimmer',
+    desc: 'Das Urbano Badezimmer im urbanen, modernen Stil. Klare Linien und funktionale Eleganz für das Stadtapartment.',
+    price: 'ab CHF 109',
+    images: ['/images/baeder/urbano-bathroom/01.jpg','/images/baeder/urbano-bathroom/02.jpg','/images/baeder/urbano-bathroom/03.jpg'],
+    specs: [
+      { label: 'Stil', value: 'Modern' },
+      { label: 'Material', value: 'MDF lackiert' },
+      { label: 'Garantie', value: 'Bis zu 20 Jahre' },
+      { label: 'Design', value: 'Urban & minimalistisch' },
+    ],
+    tagline: 'Urban & stylish',
+    featureImg: '/images/baeder/urbano-bathroom/01.jpg',
+    features: [],
+  },
+  'sole-bathroom': {
+    name: 'Sole Badezimmer',
+    desc: 'Das Sole Badezimmer strahlt Wärme und natürliche Eleganz aus. Helle, freundliche Farbtöne und organisches Design für ein entspanntes Bad.',
+    price: 'ab CHF 138',
+    images: ['/images/baeder/sole-bathroom/01.jpg','/images/baeder/sole-bathroom/02.jpg','/images/baeder/sole-bathroom/03.jpg','/images/baeder/sole-bathroom/04.jpg','/images/baeder/sole-bathroom/05.jpg','/images/baeder/sole-bathroom/06.jpg'],
+    specs: [
+      { label: 'Stil', value: 'Modern' },
+      { label: 'Material', value: 'MDF lackiert' },
+      { label: 'Garantie', value: 'Bis zu 20 Jahre' },
+      { label: 'Design', value: 'Organisch & hell' },
+    ],
+    tagline: 'Natürlich & hell',
+    featureImg: '/images/baeder/sole-bathroom/01.jpg',
+    features: [],
+  },
 }
 
 const companyFeatures = [
