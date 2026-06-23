@@ -1722,7 +1722,7 @@ const products: Record<string, Product> = {
     name: 'Nicole Badezimmer',
     desc: 'Das Nicole Badezimmer vereint klassische Eleganz mit moderner Funktionalität. Hochwertige MDF-Fronten mit edlen Lackierungen und durchdachte Stauraumlösungen für Ihr persönliches Spa-Erlebnis.',
     price: 'ab CHF 160',
-    images: ['/images/baeder/nicolle-bathroom/01.jpg'],
+    images: ['/images/baeder/nicolle-bathroom/01.jpg','/images/baeder/nicolle-bathroom/02.jpg','/images/baeder/nicolle-bathroom/03.jpg','/images/baeder/nicolle-bathroom/04.jpg','/images/baeder/nicolle-bathroom/05.jpg','/images/baeder/nicolle-bathroom/06.jpg'],
     specs: [
       { label: 'Stil', value: 'Klassisch' },
       { label: 'Material', value: 'MDF lackiert' },
@@ -1737,7 +1737,7 @@ const products: Record<string, Product> = {
     name: 'Trento Badezimmer',
     desc: 'Das Trento Badezimmer mit Lamellenoptik und hochwertigen Oberflächen. Markante vertikale Struktur trifft auf praktische Aufbewahrungslösungen.',
     price: 'ab CHF 127',
-    images: ['/images/baeder/trento-bathroom/01.jpg'],
+    images: ['/images/baeder/trento-bathroom/01.jpg','/images/baeder/trento-bathroom/02.jpg','/images/baeder/trento-bathroom/03.jpg','/images/baeder/trento-bathroom/04.jpg','/images/baeder/trento-bathroom/05.jpg','/images/baeder/trento-bathroom/06.jpg'],
     specs: [
       { label: 'Stil', value: 'Klassisch' },
       { label: 'Material', value: 'MDF lackiert' },
@@ -1752,7 +1752,7 @@ const products: Record<string, Product> = {
     name: 'Kamelie Badezimmer',
     desc: 'Das Kamelie Badezimmer besticht durch seine floral-inspirierten Fronten und weichen Linien. Romantische Details treffen auf praktische Badmöbel.',
     price: 'ab CHF 147',
-    images: ['/images/baeder/camelia-bathroom/01.jpg'],
+    images: ['/images/baeder/camelia-bathroom/01.jpg','/images/baeder/camelia-bathroom/02.jpg','/images/baeder/camelia-bathroom/03.jpg','/images/baeder/camelia-bathroom/04.jpg','/images/baeder/camelia-bathroom/05.jpg','/images/baeder/camelia-bathroom/06.jpg'],
     specs: [
       { label: 'Stil', value: 'Klassisch' },
       { label: 'Material', value: 'MDF lackiert' },
@@ -1767,7 +1767,7 @@ const products: Record<string, Product> = {
     name: 'Mix 22 Badezimmer',
     desc: 'Das Mix 22 Badezimmer kombiniert verschiedene Materialien zu einem harmonischen Ganzen. Holzdekor, Glas und Lack treffen auf modernste Badmöbeltechnik.',
     price: 'ab CHF 150',
-    images: ['/images/baeder/mix-22-bathroom/01.jpg'],
+    images: ['/images/baeder/mix-22-bathroom/01.jpg','/images/baeder/mix-22-bathroom/02.jpg','/images/baeder/mix-22-bathroom/03.jpg','/images/baeder/mix-22-bathroom/04.jpg','/images/baeder/mix-22-bathroom/05.jpg','/images/baeder/mix-22-bathroom/06.jpg'],
     specs: [
       { label: 'Stil', value: 'Modern' },
       { label: 'Material', value: 'Dekor Mix' },
