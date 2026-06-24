@@ -31,7 +31,7 @@ export async function POST(req: Request) {
 
     const heading = body.type ? `${body.type}` : 'Neue Beratungsanfrage'
     const rows = Object.entries(body)
-      .filter(([k]) => k !== 'type' && typeof body[k] === 'string' && body[k].trim())
+      .filter(([k]) => k !== 'type' && body[k] != null && String(body[k]).trim())
       .map(([k, v]) => `<b>${LABELS[k] || k}:</b> ${escapeHtml(String(v))}`)
       .join('\n')
 
