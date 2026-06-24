@@ -219,7 +219,7 @@ export default function UnternehmenPage() {
         <div className="uk-container">
           <SectionHeading>Unser Team — Qualität aus Leidenschaft</SectionHeading>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem', marginBottom: '2.5rem' }}>
-            {['1.jpg','2.jpg','3.jpeg','4.jpg','5.jpg','6.jpg'].map((f, i) => (
+            {['1.jpg','2.jpg','3.jpeg'].map((f, i) => (
               <div key={i} style={{ borderRadius: '0.5rem', overflow: 'hidden', aspectRatio: '4/3' }}>
                 <img src={`/images/zusammenarbeit/team/${f}`} alt={`Team ${i + 1}`} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
               </div>
