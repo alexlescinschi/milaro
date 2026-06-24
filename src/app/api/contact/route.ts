@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { notify } from '@/lib/notify'
 
 export async function POST(req: Request) {
   try {
@@ -8,23 +9,16 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Pflichtfelder fehlen' }, { status: 400 })
     }
 
-    const html = `
-      <h2>Neue Kontaktanfrage</h2>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>E-Mail:</strong> ${email}</p>
-      <p><strong>Telefon:</strong> ${phone || 'Nicht angegeben'}</p>
-      <p><strong>Nachricht:</strong><br>${message}</p>
-    `
+    const text = `<b>Neue Kontaktanfrage</b>\n\n<b>Name:</b> ${escapeHtml(name)}\n<b>E-Mail:</b> ${escapeHtml(email)}\n<b>Telefon:</b> ${escapeHtml(phone || 'Nicht angegeben')}\n<b>Nachricht:</b>\n${escapeHtml(message)}`
 
-    if (process.env.SMTP_HOST) {
-      const { sendEmail } = await import('@/lib/email')
-      await sendEmail({ to: 'kunde@milaro.ch', subject: 'Neue Kontaktanfrage', html })
-    } else {
-      console.log('Contact email would be sent:', { name, email, phone, message })
-    }
+    await notify(text)
 
     return NextResponse.json({ success: true })
   } catch {
     return NextResponse.json({ error: 'Interner Serverfehler' }, { status: 500 })
   }
+}
+
+function escapeHtml(s: string) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 }

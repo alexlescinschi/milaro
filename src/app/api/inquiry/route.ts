@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { notify } from '@/lib/notify'
 
 const LABELS: Record<string, string> = {
   name: 'Name',
@@ -28,25 +29,19 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Name und Telefon/E-Mail sind erforderlich' }, { status: 400 })
     }
 
-    const subject = body.type ? `Neue Anfrage – ${body.type}` : 'Neue Beratungsanfrage'
-
+    const heading = body.type ? `${body.type}` : 'Neue Beratungsanfrage'
     const rows = Object.entries(body)
       .filter(([k]) => k !== 'type' && typeof body[k] === 'string' && body[k].trim())
-      .map(([k, v]) => `<tr><td style="padding:6px 16px 6px 0;color:#666;white-space:nowrap;vertical-align:top;font-size:14px"><strong>${LABELS[k] || k}:</strong></td><td style="padding:6px 0;font-size:14px">${escapeHtml(String(v))}</td></tr>`)
-      .join('')
+      .map(([k, v]) => `<b>${LABELS[k] || k}:</b> ${escapeHtml(String(v))}`)
+      .join('\n')
 
-    const html = `<h2 style="margin:0 0 16px">${subject}</h2><table style="border-collapse:collapse;width:100%">${rows}</table>`
+    const text = `<b>${heading}</b>\n\n${rows}`
 
-    if (process.env.SMTP_HOST) {
-      const { sendEmail } = await import('@/lib/email')
-      await sendEmail({ to: 'kunde@milaro.ch', subject, html })
-    } else {
-      console.log('Inquiry email would be sent:', body)
-    }
+    await notify(text)
 
     return NextResponse.json({ success: true })
   } catch (err) {
-    console.error('Inquiry email failed:', err)
+    console.error('Inquiry notify failed:', err)
     return NextResponse.json({ error: 'Interner Serverfehler' }, { status: 500 })
   }
 }

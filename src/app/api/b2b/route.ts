@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { notify } from '@/lib/notify'
 
 export async function POST(req: Request) {
   try {
@@ -8,19 +9,16 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Pflichtfelder fehlen' }, { status: 400 })
     }
 
-    const html = `
-      <h2>Neue B2B-Anfrage</h2>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Unternehmen:</strong> ${company}</p>
-      <p><strong>E-Mail:</strong> ${email}</p>
-      <p><strong>Telefon:</strong> ${phone || 'Nicht angegeben'}</p>
-      <p><strong>Nachricht:</strong><br>${message || 'Keine Nachricht'}</p>
-    `
+    const text = `<b>Neue B2B-Anfrage</b>\n\n<b>Name:</b> ${escapeHtml(name)}\n<b>Unternehmen:</b> ${escapeHtml(company)}\n<b>E-Mail:</b> ${escapeHtml(email)}\n<b>Telefon:</b> ${escapeHtml(phone || 'Nicht angegeben')}\n<b>Nachricht:</b>\n${escapeHtml(message || 'Keine Nachricht')}`
 
-    console.log('B2B email would be sent:', { name, company, email, phone, message })
+    await notify(text)
 
     return NextResponse.json({ success: true })
   } catch {
     return NextResponse.json({ error: 'Interner Serverfehler' }, { status: 500 })
   }
+}
+
+function escapeHtml(s: string) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 }
