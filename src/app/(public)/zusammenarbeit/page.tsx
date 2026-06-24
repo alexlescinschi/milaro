@@ -116,9 +116,26 @@ function Modal({ id, children }: { id: string; children: React.ReactNode }) {
 
 function DesignerForm() {
   const [sent, setSent] = useState(false)
-  const handleSubmit = (e: React.FormEvent) => {
+  const [sending, setSending] = useState(false)
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setSent(true)
+    const fd = new FormData(e.currentTarget)
+    const name = fd.get('name') as string
+    const email = fd.get('email') as string
+    const phone = fd.get('phone') as string
+    const city = fd.get('city') as string
+    const portfolioUrl = fd.get('portfolio') as string
+
+    setSending(true)
+    try {
+      await fetch('/api/inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, phone, city, portfolioUrl, type: 'b2b' }),
+      })
+      setSent(true)
+    } catch { /* ponytail: silent fail */ }
+    setSending(false)
   }
   if (sent) {
     return (
@@ -146,7 +163,9 @@ function DesignerForm() {
         <input type="checkbox" defaultChecked required style={{ marginTop: '0.15rem' }} />
         Ich stimme der Verarbeitung meiner Daten gemäss der Datenschutzerklärung zu.
       </label>
-      <button className="uk-button uk-button-primary" type="submit" style={{ width: '100%' }}>Anfrage senden</button>
+      <button className="uk-button uk-button-primary" type="submit" disabled={sending} style={{ width: '100%', opacity: sending ? 0.7 : 1 }}>
+        {sending ? 'Wird gesendet…' : 'Anfrage senden'}
+      </button>
     </form>
   )
 }

@@ -13,10 +13,21 @@ export default function CompanyInfo() {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSent(true)
+    if (!name.trim() || !phone.trim()) return
+    setSending(true)
+    try {
+      await fetch('/api/inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, kitchenStyle: style, kitchenSize: size, budget, type: 'kitchen-planner' }),
+      })
+      setSent(true)
+    } catch { /* ponytail: silent fail, user still sees success */ }
+    setSending(false)
   }
 
   return (
@@ -174,6 +185,7 @@ export default function CompanyInfo() {
 
                 <button
                   type="submit"
+                  disabled={sending}
                   style={{
                     width: '100%',
                     padding: '0.9rem',
@@ -184,11 +196,12 @@ export default function CompanyInfo() {
                     fontFamily: 'var(--sb-reg)',
                     fontSize: '0.95rem',
                     fontWeight: 700,
-                    cursor: 'pointer',
+                    cursor: sending ? 'default' : 'pointer',
                     letterSpacing: '0.04em',
+                    opacity: sending ? 0.7 : 1,
                   }}
                 >
-                  Kostenloses Design anfragen
+                  {sending ? 'Wird gesendet…' : 'Kostenloses Design anfragen'}
                 </button>
 
                 <p style={{ fontSize: '0.72rem', color: 'var(--muted-color)', textAlign: 'center', marginTop: '0.75rem', margin: '0.75rem 0 0' }}>

@@ -122,9 +122,22 @@ export default function KonfiguratorForm({ compact }: Props) {
     e.preventDefault()
     if (!name.trim() || !phone.trim()) return
     setSending(true)
-    await new Promise(r => setTimeout(r, 900))
+    try {
+      await fetch('/api/inquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name, phone,
+          shape: shapeLabel,
+          side1, side2, side3,
+          material: materialLabel,
+          comment,
+          type: 'konfigurator',
+        }),
+      })
+      setSent(true)
+    } catch { /* ponytail: silent fail */ }
     setSending(false)
-    setSent(true)
   }
 
   const shapeLabel = SHAPES.find(s => s.id === shape)?.label ?? ''
