@@ -13,7 +13,7 @@ const ADVANTAGES = [
   },
   {
     title: 'Möbel für das ganze Haus',
-    text: 'Küche, Technik, Schränke, Betten, Accessoires — wir richten Ihr gesamtes Zuhause ein, mit Vorteil beim Komplexkauf.',
+    text: 'Küche, Technik, Schränke, Accessoires — wir richten Ihr gesamtes Zuhause ein, mit Vorteil beim Komplexkauf.',
   },
   {
     title: 'Garantie bis 20 Jahre',

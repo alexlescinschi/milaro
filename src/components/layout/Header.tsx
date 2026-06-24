@@ -25,7 +25,6 @@ const NAV_ITEMS = [
         { label: 'Küchen', href: '/katalog?cat=kuechen' },
         { label: 'Schränke', href: '/katalog?cat=schraenke' },
         { label: 'Bäder', href: '/katalog?cat=baeder' },
-        { label: 'Sofas & Betten', href: '/katalog?cat=sofas-betten' },
       ],
     },
   },

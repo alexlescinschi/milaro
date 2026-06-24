@@ -4,7 +4,7 @@ export type Product = {
   img: string
   images?: string[]
   videos?: (string | null)[]
-  cat: 'kuechen' | 'schraenke' | 'baeder' | 'sofas-betten'
+  cat: 'kuechen' | 'schraenke' | 'baeder'
   type: string
   label: string
 }
@@ -13,7 +13,6 @@ export const CAT_URL: Record<string, string> = {
   kuechen: 'kuechen',
   schraenke: 'schraenke',
   baeder: 'baeder',
-  'sofas-betten': 'sofas-betten',
 }
 
 export const PRODUCTS: Product[] = [

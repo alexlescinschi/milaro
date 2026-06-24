@@ -13,7 +13,6 @@ const CAT_TABS = [
   { id: 'kuechen',       label: 'Küchen' },
   { id: 'schraenke',     label: 'Schränke' },
   { id: 'baeder',        label: 'Bäder' },
-  { id: 'sofas-betten',  label: 'Sofas & Betten' },
 ]
 
 const TYPE_TABS: Record<string, { id: string; label: string }[]> = {
@@ -44,7 +43,7 @@ function CatalogContent() {
   useEffect(() => {
     const cat = searchParams.get('cat')
     const type = searchParams.get('type')
-    if (cat && ['kuechen', 'schraenke', 'baeder', 'sofas-betten'].includes(cat)) {
+    if (cat && ['kuechen', 'schraenke', 'baeder'].includes(cat)) {
       setActiveCat(cat)
     }
     if (type && type !== 'all') {

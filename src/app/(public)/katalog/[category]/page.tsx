@@ -4,7 +4,6 @@ const CAT_MAP: Record<string, string> = {
   kuechen: 'kuechen',
   schraenke: 'schraenke',
   baeder: 'baeder',
-  'sofas-betten': 'sofas-betten',
 }
 
 export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {

@@ -14,7 +14,6 @@ export const NAV_ITEMS = [
         { label: 'Küchen', href: '/katalog/kuechen' },
         { label: 'Schränke', href: '/katalog/schraenke' },
         { label: 'Bäder', href: '/katalog/baeder' },
-        { label: 'Sofas & Betten', href: '/katalog/sofas-betten' },
       ],
     },
   },
@@ -97,7 +96,6 @@ export const FOOTER_LINKS = [
       { label: 'Küchen', href: '/katalog/kuechen' },
       { label: 'Schränke', href: '/katalog/schraenke' },
       { label: 'Bäder', href: '/katalog/baeder' },
-      { label: 'Sofas & Betten', href: '/katalog/sofas-betten' },
     ],
   },
   {
@@ -131,7 +129,6 @@ export const CATEGORIES = [
   { id: 1, name: 'Küchen', slug: 'kuechen', image: '/images/promo/nav/kitchens1.jpg', count: 9 },
   { id: 2, name: 'Schränke', slug: 'schraenke', image: '/images/promo/nav/closets3.jpg', count: 9 },
   { id: 3, name: 'Bäder', slug: 'baeder', image: '/images/promo/nav/baths1.jpg', count: 9 },
-  { id: 4, name: 'Sofas & Betten', slug: 'sofas-betten', image: '/images/promo/nav/sofas1.jpg', count: 9 },
 ]
 
 export const STATS = [

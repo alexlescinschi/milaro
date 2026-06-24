@@ -6,7 +6,7 @@ import FloatingContact from '@/components/layout/FloatingContact'
 
 export const metadata: Metadata = {
   title: 'milaro.ch — Massgefertigte Küchen und Möbel in der Schweiz',
-  description: 'milaro.ch: Massgefertigte Küchen, Schränke, Bäder und Sofas. Schweizer Qualität und individuelles Design für Ihr Zuhause.',
+  description: 'milaro.ch: Massgefertigte Küchen, Schränke und Bäder. Schweizer Qualität und individuelles Design für Ihr Zuhause.',
 }
 
 export default function RootLayout({

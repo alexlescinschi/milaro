@@ -10,7 +10,6 @@ const FOOTER_LINKS = [
       { label: 'Küchen',          href: '/katalog?cat=kuechen' },
       { label: 'Schränke',        href: '/katalog?cat=schraenke' },
       { label: 'Bäder',           href: '/katalog?cat=baeder' },
-      { label: 'Sofas & Betten',  href: '/katalog?cat=sofas-betten' },
     ],
   },
   {

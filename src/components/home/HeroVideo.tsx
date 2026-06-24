@@ -2,12 +2,10 @@
 
 import Link from 'next/link'
 
-const CATS = [
-  { name: 'Küchen', slug: 'kuechen', img: '/images/promo/nav/kitchens1.jpg' },
-  { name: 'Schränke', slug: 'schraenke', img: '/images/promo/nav/closets3.jpg' },
-  { name: 'Bäder', slug: 'baeder', img: '/images/promo/nav/baths1.jpg' },
-  { name: 'Sofas', slug: 'sofas-betten', img: '/images/promo/nav/sofas1.jpg' },
-  { name: 'Betten', slug: 'sofas-betten', img: '/images/promo/nav/beds1.jpg' },
+const HERO_LINKS = [
+  { name: 'Küchen', href: '/katalog?cat=kuechen' },
+  { name: 'Schränke', href: '/katalog?cat=schraenke' },
+  { name: 'Bäder', href: '/katalog?cat=baeder' },
 ]
 
 export default function HeroVideo() {
@@ -28,52 +26,28 @@ export default function HeroVideo() {
       <div className="hero-content uk-container">
         <h1 className="hero-headline">MILARO  — Sie sind zu Hause</h1>
 
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '0.8rem', flexWrap: 'wrap' }}>
-          {CATS.map((cat) => (
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '0.8rem', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+          {HERO_LINKS.map((link) => (
             <Link
-              key={cat.name}
-              href={`/katalog/${cat.slug}`}
-              className="liquidGlass-wrapper glass-panel"
+              key={link.name}
+              href={link.href}
               style={{
-                width: 150,
-                height: 170,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'flex-end',
-                textDecoration: 'none',
+                padding: '0.5rem 1.5rem',
+                border: '1.5px solid rgba(255,255,255,0.5)',
+                borderRadius: '2rem',
                 color: 'white',
-                background: 'rgba(255,255,255,0.12)',
-                backdropFilter: 'blur(8px)',
-                border: '1px solid rgba(255,255,255,0.2)',
-                borderRadius: '1rem',
-                overflow: 'hidden',
-                position: 'relative',
+                fontSize: '0.9rem',
+                fontWeight: 600,
+                textDecoration: 'none',
+                textTransform: 'uppercase',
+                letterSpacing: '0.06em',
+                transition: 'background 0.2s, border-color 0.2s',
+                backdropFilter: 'blur(4px)',
               }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.15)'; (e.currentTarget as HTMLElement).style.borderColor = 'white' }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.5)' }}
             >
-              <img
-                src={cat.img}
-                alt={cat.name}
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  opacity: 0.6,
-                }}
-              />
-              <span style={{
-                fontFamily: 'var(--sb-reg)',
-                fontSize: '1.1rem',
-                position: 'relative',
-                zIndex: 1,
-                textShadow: '0 1px 8px rgba(0,0,0,0.5)',
-                marginBottom: '1rem',
-              }}>
-                {cat.name}
-              </span>
+              {link.name}
             </Link>
           ))}
         </div>

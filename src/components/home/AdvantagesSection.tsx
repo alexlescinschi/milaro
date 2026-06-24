@@ -1,7 +1,7 @@
 const advantages = [
   { title: 'Eigene Produktion', text: 'Fabrik mit 92.000 m² und vollständigem Produktionszyklus. Modernste Maschinen und Handarbeit.' },
   { title: 'Projekte jeder Komplexität', text: 'Ihre Küche wird genau so, wie Sie sie sich vorstellen. Denn Innenarchitektur ist Kunst.' },
-  { title: 'Möbel für das ganze Haus', text: 'Küche, Technik, Schränke, Betten, Accessoires – alles aus einer Hand.' },
+  { title: 'Möbel für das ganze Haus', text: 'Küche, Technik, Schränke, Accessoires – alles aus einer Hand.' },
   { title: 'Garantie bis 20 Jahre', text: 'Hochwertige Materialien und Komponenten für langanhaltende Freude.' },
   { title: 'Schweizer Service', text: 'Persönliche Beratung und Betreuung in der ganzen Schweiz.' },
 ]
