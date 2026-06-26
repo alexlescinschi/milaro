@@ -31,6 +31,7 @@ const NAV_ITEMS = [
   { label: 'Portfolio',    href: '/portfolio' },
   { label: 'Services',     href: '/dienstleistungen' },
   { label: 'Unternehmen',  href: '/unternehmen' },
+  { label: 'Über uns',    href: '/ueber-uns' },
   { label: 'Kontakt',      href: '/kontakt' },
 ]
 

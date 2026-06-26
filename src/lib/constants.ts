@@ -86,6 +86,7 @@ export const NAV_ITEMS = [
       },
     },
   },
+  { label: 'Über uns', href: '/ueber-uns' },
   { label: 'Kontakt', href: '/kontakt' },
 ]
 
@@ -118,7 +119,7 @@ export const FOOTER_LINKS = [
   {
     title: 'Unternehmen',
     links: [
-      { label: 'Über uns', href: '/unternehmen' },
+      { label: 'Über uns', href: '/ueber-uns' },
       { label: 'Kontakt', href: '/kontakt' },
       { label: 'Zusammenarbeit', href: '/zusammenarbeit' },
     ],
