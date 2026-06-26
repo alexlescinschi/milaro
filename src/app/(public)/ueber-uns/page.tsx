@@ -37,12 +37,7 @@ export default function UeberUnsPage() {
             }}>
               Wo Handwerk auf Herz trifft –<br />Willkommen bei Milaro.
             </h1>
-            <p style={{
-              color: 'rgba(255,255,255,0.8)', margin: 0, maxWidth: 520,
-              lineHeight: 1.7, fontSize: '1.05rem',
-            }}>
-              Premium-Küchen und Massmöbel, gefertigt mit Liebe, Präzision und reinem Gewissen in der Schweiz.
-            </p>
+
           </div>
         </div>
       </section>

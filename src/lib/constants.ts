@@ -133,7 +133,7 @@ export const CATEGORIES = [
 ]
 
 export const STATS = [
-  { value: '667 637', label: 'Aufträge ausgeführt seit 1999' },
+  { value: '1 667', label: 'Aufträge ausgeführt seit 2023' },
   { value: '20', label: 'Jahre Garantie' },
-  { value: '26', label: 'Jahre auf dem Markt' },
+  { value: '3', label: 'Jahre auf dem Markt' },
 ]
